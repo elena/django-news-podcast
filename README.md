@@ -6,6 +6,7 @@ This project has been on the mind of the author for several years and is motivat
 - Recent [revival of Django Updates posts](https://www.djangoproject.com/weblog/2013/dec/09/reviving-django-update-posts/).
 - Recent cessation of most recent incarnation of Django podcast: [Django Roundup](http://roundup.lincolnloop.com/).
 
+Transferred from bitbucket project here: https://bitbucket.org/elequ/podcast-project/wiki/Home
 ---
 
 # General Podcast guidelines
@@ -26,7 +27,7 @@ Purpose:
 
 News reportage style.
 
-Effectively reading official blog out loud with more than 1 person.
+Effectively reading official blog out loud.
 
 
 ## Format
@@ -52,16 +53,17 @@ Natural priority:
 
 ## Schedule
 
-Very clear schedule and format. Sparse rather than chatty.
+Very clear schedule and format.
 
 #### Timing
-- Regular "period" (eg once a month)
-- Major release special with Release manager.
+- Regular "period" -- to synchronise with every second official update email.
+- Major release special with Release manager?
 
 
 ## Discussion Guidelines
 
 - Assume "Intelligent Listener"
+- Sparse rather than chatty
 - Provide technical background:
     - design decisions
     - details about decision-making process
