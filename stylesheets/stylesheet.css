@@ -50,8 +50,8 @@ Theme Styles
 
 body {
   box-sizing: border-box;
-  color:#373737;
-  background: #212121;
+  color:#212121;
+  background: #092e20;
   font-size: 16px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -60,11 +60,24 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
-  font-weight: 700;
-  color:#222222;
-  font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
-  letter-spacing: -1px;
+  font-family: "Trebuchet MS",sans-serif;
+  font-weight: normal;
+  color: #487858;
 }
+
+h1, h1 a {
+    color: black;
+}
+
+h2, h2 a {
+    color: #ab5603;
+}
+
+h3 a, h4 a {
+    color: #487858;
+    text-decoration: none;
+}
+
 
 h1 {
   font-size: 36px;
@@ -103,7 +116,7 @@ footer p {
 
 a {
   text-decoration: none;
-  color: #007edf;
+  color: #ffc757;
   text-shadow: none;
 
   transition: color 0.5s ease;
@@ -119,6 +132,8 @@ a {
 }
 
 a:hover, a:focus {text-decoration: underline;}
+
+a:visited {color: #ab5603;}
 
 footer a {
   color: #F2F2F2;
@@ -232,7 +247,7 @@ hr {
 }
 
 table {
-  border: 1px solid #373737;
+  border: 1px solid #234f32;
   margin-bottom: 20px;
   text-align: left;
  }
@@ -240,13 +255,13 @@ table {
 th {
   font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   padding: 10px;
-  background: #373737;
+  background: #234f32;
   color: #fff;
  }
 
 td {
   padding: 10px;
-  border: 1px solid #373737;
+  border: 1px solid #234f32;
  }
 
 form {
@@ -285,12 +300,12 @@ Full-Width Styles
 }
 
 #header_wrap {
-  background: #212121;
-  background: -moz-linear-gradient(top, #373737, #212121);
-  background: -webkit-linear-gradient(top, #373737, #212121);
-  background: -ms-linear-gradient(top, #373737, #212121);
-  background: -o-linear-gradient(top, #373737, #212121);
-  background: linear-gradient(top, #373737, #212121);
+  background: #092e20;
+  background: -moz-linear-gradient(top, #234f32, #092e20);
+  background: -webkit-linear-gradient(top, #234f32, #092e20);
+  background: -ms-linear-gradient(top, #234f32, #092e20);
+  background: -o-linear-gradient(top, #234f32, #092e20);
+  background: linear-gradient(top, #234f32, #092e20);
 }
 
 #header_wrap .inner {
@@ -299,14 +314,14 @@ Full-Width Styles
 
 #project_title {
   margin: 0;
-  color: #fff;
+  color: #ffc757;
   font-size: 42px;
   font-weight: 700;
   text-shadow: #111 0px 0px 10px;
 }
 
 #project_tagline {
-  color: #fff;
+  color: #ab5603;
   font-size: 24px;
   font-weight: 300;
   background: none;
@@ -363,7 +378,7 @@ Full-Width Styles
 }
 
 #footer_wrap {
-  background: #212121;
+  background: #092e20;
 }
 
 
