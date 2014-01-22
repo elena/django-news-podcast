@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+    <title>Django News Podcast 30-Dec-2013</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph tags -->
+
+            <meta property="og:type" content="article"/>
+            <meta property="og:title" content="Django News Podcast 30-Dec-2013"/>
+            <meta property="og:url" content="http://elena-django-podcast.github.io/2013-12-30-django-news-podcast.html"/>
+            <meta property="og:description" content="Welcome to Django's News and Updates podcast, the accompanying podcast to Django's blog and update email. These are the update for the 28 days up to 29th December 2013 The latest release of Django is: 1.6.1 The latest release of Python is: 3.3.3 0 ..."/>
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="http://elena-django-podcast.github.io/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="http://elena-django-podcast.github.io/theme/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://elena-django-podcast.github.io/theme/css/pygments.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://elena-django-podcast.github.io/theme/css/style.css" type="text/css"/>
+    <!-- JavaScript plugins (requires jQuery) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+        <link href="http://elena-django-podcast.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="Django News Podcast ATOM Feed"/>
+
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-47162669-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="http://elena-django-podcast.github.io" class="navbar-brand">Django News Podcast</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="http://elena-django-podcast.github.io/category/misc.html">Misc</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://elena-django-podcast.github.io/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</nav>
+<!-- /.navbar -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="http://elena-django-podcast.github.io/2013-12-30-django-news-podcast.html"
+                       rel="bookmark"
+                       title="Permalink to Django News Podcast 30-Dec-2013">
+                        Django News Podcast 30-Dec-2013
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="icon-calendar"></i>Mon 30 December 2013
+    </span>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="http://elena-django-podcast.github.io/tag/show-notes.html">show-notes</a>
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <hr />
+<p>Welcome to Django's News and Updates podcast, the accompanying podcast to Django's blog and update email.</p>
+<p>These are the update for the 28 days up to 29th December 2013</p>
+<div class="highlight"><pre><span class="n">The</span> <span class="n">latest</span> <span class="n">release</span> <span class="n">of</span> <span class="n">Django</span> <span class="n">is</span><span class="o">:</span> <span class="mf">1.6.1</span>
+<span class="n">The</span> <span class="n">latest</span> <span class="n">release</span> <span class="n">of</span> <span class="n">Python</span> <span class="n">is</span><span class="o">:</span> <span class="mf">3.3.3</span>
+</pre></div>
+
+
+<h2>0. Security</h2>
+<h3>Security advisory: ImageField abuse</h3>
+<p>Posted by Tim Graham on December 2, 2013</p>
+<p><code>ImageField</code> expects a valid image file, but it may allow uploads on non-image content, such as HTML or JavaScript.</p>
+<p>Unfortunately, we cannot offer a solution in Django itself.</p>
+<p>Rather, you need to take some steps in how you serve static files in order to mitigate this type of attack.</p>
+<p>These steps are now outlined in our security guide in the <em>Django online documentation</em>:</p>
+<blockquote>
+<p><a href="https://docs.djangoproject.com/en/dev/topics/security/#user-uploaded-content">https://docs.djangoproject.com/en/dev/topics/security/#user-uploaded-content</a></p>
+</blockquote>
+<p>We recommend that if you allow image uploads that you check your server's configuration against the online guide.</p>
+<p>As always with web development: Always take care with any user uploaded files.</p>
+<p>Thanks Rolo Mawlabaux for reporting this vulnerability.</p>
+<h2>1. Upcoming cut-off and closing dates</h2>
+<ul>
+<li>1-Jan-2014 (Wed): PyCon 2014, Financial Aid Applications close, Montreal Canada in starting April 9</li>
+<li>6-Jan-2014 (Mon): Django Weekend Cardiff, call for papers deadline for submissions, Cardiff starting February 7</li>
+<li>20-Jan-2014 (Mon): Django 1.7 major feature cut-off</li>
+</ul>
+<h2>2. Releases</h2>
+<h3>Minor Releases</h3>
+<p><strong>Django 1.6.1</strong> -- 12-Dec-2013</p>
+<p>Follow-up bug fix release to the last major release: <strong>Django 1.6</strong> on 6-Nov-2013.</p>
+<p>About 2 dozen minor bug and regression fixes, all with ticket numbers greater than #21350 and related mainly to corner-case or environment setup variations.</p>
+<p>@@ Anything notable in 1.6.1?</p>
+<h3>Major Releases</h3>
+<p>The next major release of Django is 1.7 scheduled for May 2014.</p>
+<p>The 1.7 Roadmap schedule is:</p>
+<ul>
+<li>1.7 alpha -- January 20th (major feature freeze) -- which is to say that 1.7 will be comprised of whatever is in by this date.</li>
+<li>1.7 beta -- March 6th (complete feature freeze)</li>
+<li>1.7 release candidate -- May 1st (translations freeze)</li>
+<li>Final release -- May 15th (assuming a second release candidate is not needed)</li>
+</ul>
+<p>Andrew Godwin has stepped up to be the release manager for 1.7, he says:</p>
+<blockquote>
+<p>We will feature-freeze and branch off a release branch as we roll the beta, and any features that aren't in by this date <em>will</em> have to wait.</p>
+</blockquote>
+<p>More details can be found at <a href="https://code.djangoproject.com/wiki/Version1.7Roadmap">Version1.7Roadmap on the wiki</a>.</p>
+<p>Posted (in Django Dev) by Andrew Godwin on December 10, 2013</p>
+<h2>3. News</h2>
+<h3>Kogan donates A$10,000 to the DSF</h3>
+<p>Posted by Russell Keith-Magee on December 16, 2013</p>
+<p>The Django Software Foundation (DSF) is proud to announce that we have just received an A$10,000 (around US$9,000) donation from Kogan.com.</p>
+<p>Kogan.com is one of Australia's most recognisable entrepreneurial brands and values technology at its core.</p>
+<p>Kogan selected Django as its website platform in 2006 because of it’s scalable design, flexibility and burgeoning open source community. Django has been (and still is) Kogan’s platform of choice throughout the company’s rapid growth as Australia’s largest online retailer.</p>
+<p>Kogan &amp; its software engineering team give a big shout out to everyone in the Django community and extend a special thanks to the team behind significant ORM speed improvements in the Django 1.6 release!</p>
+<p>The team is excited to have built several world-first e-commerce innovations on a platform that is so enjoyable to work with!</p>
+<p>The DSF will use these funds to help support Django development sprints, to provide financial aid to people in the Django community to attend Django and Python events, and to support any other activities that benefit the Django community.</p>
+<p>A huge thanks to Ruslan Kogan and his team for this generous contribution!</p>
+<h3>Other News</h3>
+<p>The esteemed British core contributors Andrew Godwin and Simon Willison are looking to be based in the USA in the new year.</p>
+<p>Simon recently having moved back and Andrew announcing on Django Dev that he's:</p>
+<blockquote>
+<p>moving to the USA during this release cycle (January most likely)</p>
+</blockquote>
+<h2>4. Conferences/Events</h2>
+<h4>Announcing Django Weekend Cardiff, the UK's first Django conference</h4>
+<p>Posted by Daniele Procida on December 2, 2013</p>
+<p><a href="djangoweekend.org">djangoweekend.org</a></p>
+<p>7 - 9th February</p>
+<p>In 2014 Cardiff will host the first-ever Django conference in the UK.</p>
+<p>Django Weekend Cardiff will take place at Cardiff University in Wales, from the 7th to the 9th February, for three days of talks, tutorials, code sprints and clinics.</p>
+<p>Registration for the event is currently open, as well as a Call for Papers  (deadline for submissions: Monday 6th January 2014).</p>
+<p><strong>Django Weekend Sponsorship</strong></p>
+<p>Django Weekend Cardiff is looking for more sponsors, so please encourage any sponsors you know to help the success of this event.</p>
+<p>Please get in touch with Daniele at info@djangoweekend.org if you want to ask or discuss anything at all about the event.</p>
+<p>Daniele Procida, on behalf of Django Weekend Cardiff.</p>
+<h4>Announcing DjangoCon EU 2014: "Django Island"</h4>
+<p><a href="2014.djangocon.eu">2014.djangocon.eu</a></p>
+<p>13 - 17th May 2014</p>
+<p>Hashtag: #DjangoIsland</p>
+<p>The French Django Community have announced 2014 DjangoConEU will be held on the French Riviera on the French Mediterranean coast in May 2014.</p>
+<p>Following the very high standard set by DjangoCon EU in Poland last year, it is being held on its own island "L'île des Embiez", located on the Côte d'Azur, between Toulon and Marseille. The island is only accessible by a short boat trip and will be used exclusively by DjangoCon EU.</p>
+<p>Tickets aren't on sale yet but should go on sale soon.</p>
+<p>Price of the ticket will include meals and accommodation, and the boat to and from the island. Partners are welcome to attend with accommodation and meal rates becoming available for them soon too.</p>
+<p>For children up to four-years-old attendance is free, including accommodation and food. They'll be providing rates for children over four soon.</p>
+<p>Talks for the conference will begin on Tuesday 13th May at 10am.</p>
+<h4>Other Conferences/Events</h4>
+<ul>
+<li>2014 Feb 7-9 -- Django Weekend Cardiff</li>
+<li>2014 Feb 22-23 -- PyCon Philipines (tickets not announced yet)</li>
+<li>2014 Apr 9-17 -- PyCon 2014, Montreal Canada (early bird sold out)</li>
+<li>2014 Apr 9-10 -- Tutorials</li>
+<li>2014 Apr 11-13 -- Conference</li>
+<li>2014 Apr 14-17 -- Sprints</li>
+<li>2014 May 13-17 -- DjangoConEU, L'île des Embiez is located on the Côte d'Azur, between Toulon and Marseille. (no tickets announced yet, should be this week)</li>
+<li>2014 Jul 21-27 -- Euro Python 2014 in Berlin Germany. (no tickets announced yet)</li>
+<li>2014 Aug 1-5 -- PyCon AU</li>
+<li>2014 Labor-Day weekend September -- DjangoCon 2014, Portland Oregon</li>
+</ul>
+<h2>5. Community requests</h2>
+<h3>Call for Volunteers: DjangoCon US 2014 Website</h3>
+<p>Posted by Russell Keith-Magee on December 16, 2013</p>
+<p>It might be 9 months away, but work is already underway planning DjangoCon US 2014. One of the first pieces of work required is the conference website. Last year's website design was met with some criticism, so this year, The Open Bastion (the organizers of DjangoCon US) is calling for volunteers.</p>
+<p>If you are interested in helping out with the design of this year's conference website, jump onto the DjangoCon organizers mailing list, or email Steve Holden from Open Bastion directly (steve@holdenweb.com).</p>
+<p>If website design isn't your thing, but you're still interested in volunteering, you're also welcome to join the organisers mailing list (https://groups.google.com/forum/#!forum/djangocon-organizers) -- we'll need lots more volunteers before the big event arrives!</p>
+<h3>Django Updates</h3>
+<p>If you have any community requests for volunteers, support, sponsorship or other projects, please email <a href="scoop@djangoproject.com">scoop@djangoproject.com</a> to be posted here.</p>
+<h3>Show Notes</h3>
+<p>These show notes are "open source" on github so please be sure to make any corrections or additions at: <a href="https://github.com/elena/django-news-podcast/blob/master/9999_2013-12-29.md">github.com/elena/django-news-podcast</a></p>
+<h2>Lastly: Summary of Django Dev this month</h2>
+<p>Brief and loose summary of what was discussed on the Django Development mailing list during the last 28 days (excluding announcements and support enquiries).</p>
+<p>This is very much a summary so please read and contribute to the actual threads if there's anything mentioned in your field of interest.</p>
+<p>The most notable 3 discussions were:</p>
+<ul>
+<li>Security Advisory:ImageField abuse -- Jacob Kaplan-Moss</li>
+<li>App-loading reloaded -- Aymeric Augustin</li>
+<li>Self-referenced template recursion handling -- Unai Zalakain and Anssi Kääriäinen</li>
+</ul>
+<p>There was also interesting discussion revived about a NoSQL backend, work on improved aggregation support.</p>
+<h4>3-Dec-2014 Security Advisory: ImageField abuse</h4>
+<p>Jacob Kaplan-Moss</p>
+<p>An HTML file can be uploaded as an image if that file contains a valid PNG header followed by malicious HTML.</p>
+<p>This file will pass verification of the libraries that Django uses for ImageField image processing (PIL or Pillow).</p>
+<p>When this file is subsequently displayed to a user, it may be displayed as HTML depending on the type and configuration of your web server.</p>
+<p>No bulletproof technical solution exists at the framework level to safely validate all user uploaded file content, however, there are some other steps you can take to mitigate these attacks:</p>
+<p>One class of attacks can be prevented by always serving user uploaded content from a distinct Top Level Domain (TLD). This will protect against same-origin policy protections such as cross site scripting.</p>
+<p>Beyond this, applications may choose to define a whitelist of allowable file extensions for user uploaded files and configure the web server to only serve such files.</p>
+<h4>16-Dec-2013 App-loading reloaded</h4>
+<p>Aymeric Augustin</p>
+<p>Related ticket: #3591 add support for custom app_label and verbose_name February 2007</p>
+<p>Summary: As he says there isn't really any tldr here, it's too detailed a project to gloss over as Many related issues have been closed as duplicates of #3591. As a consequence, its scope has become frighteningly ambitious over the years. This is certainly one of the reasons why it hasn’t been resolved yet.</p>
+<p>He gives great day-by-day description of his progress. As he says:</p>
+<blockquote>
+<p>this one is just an long monologue designed to keep a public record of what I’ve been doing.</p>
+</blockquote>
+<p>Aymeric has broken the ticket up and his pre-Xmas goals have been as follows:</p>
+<ul>
+<li>1) Allow apps without a models module or package</li>
+<li>2) Provide verbose_name for the admin</li>
+<li>6) Clarify the app cache population sequence</li>
+<li>7) Enforce consistency between the contents of INSTALLED_APPS and the AppCache</li>
+</ul>
+<p>These patches will be merged for 1.7 alpha.</p>
+<p>He has a range of other ideas and goals also which are worth reading.</p>
+<p>Relatedly Curtis Maloney asked on 22-Dec about signal handling and circular imports.</p>
+<p>charettes (Simon) responds:</p>
+<blockquote>
+<p>Since Django 1.7 you can lazily reference model signal sender, it might help solving your circular import issues.</p>
+<p>It seems "providing a reliable initialization signal" is one of Aymeric's main goal.</p>
+</blockquote>
+<h4>7-Dec-2013 Self-referenced template recursion handling</h4>
+<p>Unai Zalakain</p>
+<p>Related Ticket: #15053 Make templates more reusable by Improving template loading algorithm to avoid extending infinite recursion (11-Jan-2011, Accepted)</p>
+<blockquote>
+<p>Pablo Martín (goinnn[0]) and I have been working on self-referenced template
+recursion handling for the past few weeks. The idea is that when a template
+references itself when extending, recursion is avoided by skipping the current
+template loader (ticket #15053[1]).</p>
+</blockquote>
+<p>This discussion reinforces that this would be a really nice feature to have but this is a non-straightforward feature that has interesting consequences.</p>
+<p>To quote Pablo Martin (Goinnn):</p>
+<blockquote>
+<p>... if we allow that a app template
+overwrite with self-reference another app template the template
+development will be a chaos ...</p>
+</blockquote>
+<p>24 posts/9 authors</p>
+<p>Unai and Pablo still seem to be working on this ticket and this discussion will undoubtedly continue.</p>
+<h4>18-Dec-2013 Django ORM support for NoSql databases</h4>
+<p>parisrocks</p>
+<p>Asking about official support for NoSQL databases like Cassandra or MongoDB.</p>
+<p>A lively discussion ensued with: Tom Evans, Chris Wilson, Javier Guerra, Aymeric Augustin, Karen Tracey, Alioune Dia</p>
+<p>Javier kindly reposted RKMs response to the same question from 26-Mar-2013.</p>
+<p>Alex Burgel, a committer to <code>django-norel</code> provided some further information:</p>
+<blockquote>
+<p>We have supported backends for mongodb and google appengine. There are others out there, but they're not part of the nonrel project. So knowing what it takes to use the django ORM to work with a NoSQL DB, I hope I can provide some useful information.</p>
+<ol>
+<li>Things you can do on a SQL system that you can't on NoSQL. - The big ones are (conditionally) joins and aggregates,</li>
+</ol>
+</blockquote>
+<p>He says to this:</p>
+<blockquote>
+<p>My perspective is that this is the trade off you make when choosing your datastore, so you should know this going in.</p>
+<ol>
+<li>Things you can do on NoSQL that you can't in SQL.</li>
+<li>Assumptions django makes about the underlying datastore.</li>
+</ol>
+</blockquote>
+<p>Aymeric says:</p>
+<blockquote>
+<p>Currently, the best option is (probably) <code>django-nonrel</code>. We're open to suggestions that help django-nonrel but we aren't working towards a merge.</p>
+</blockquote>
+<p>He goes on to say:</p>
+<blockquote>
+<p>So, while it's technically possible to implement parts of the ORM's APIs on top of a non-relational database proved by the django-nonrel project isn't much enthusiasm because the APIs are optimized for joins, which SQL databases are good at while NoSQL storage engines aren't.</p>
+</blockquote>
+<p>Russell and Aymeric agree that "the interest has faded" in implementing an ODM in to Django core.</p>
+<p>Aymeric adds:</p>
+<blockquote>
+<p>since there's no such thing as "common NoSQL features", each datastore
+would need its own modifications, so i think the common attitude is
+that most of these features don't belong in the ORM.</p>
+</blockquote>
+<p>Here are some key quotes from Russell's closing of the disucssion:</p>
+<blockquote>
+<p>I'm not currently confident that NoSQL stores are at a sufficient level of maturity that this sort of abstraction is possible (or plausible) for anything beyond trivial examples. Remember, SQL has been a work in progress for 20 years as a <em>published</em> standard (and another 20 prior to that as an informal one) - the common ground in SQL is well understood at this point.</p>
+<p>Independent of whether NoSQL gets added to core, _meta would definitely benefit from an implementation cleanup and formalisation as a backwards-compatible API.</p>
+<p>(Actually… this might make a good GSoC project…)</p>
+</blockquote>
+<h4>21-Dec-2013 Improving aggregate support (#14030)</h4>
+<p>Josh Smeaton</p>
+<p>Related Ticket: #14030 September 2010 -- Use F() objects in aggregates</p>
+<p>Anssi Kääriäinen</p>
+<blockquote>
+<p>A lot has already been done. The main part of the work has been bug fixing, code cleanup and join generation changes.</p>
+<p>The next part is introducing custom lookups for 1.7, and later on in 1.8 allow usage of custom lookups in every part of the ORM</p>
+</blockquote>
+<p>Josh has submitted a patch to simplify the existing F() evaluation and is looking for feedback.</p>
+<h4>25-Nov-2013 Using setuptools to make django-admin.py runnable on Windows (#21340)</h4>
+<p>Remram</p>
+<p>Discussing django-admin.py being problematic, particularly on Windows and setup tools.</p>
+<p>Florian Apolloner, Donald Stufft (the current administrator of the official Python packaging) and Vernon Cole all weigh in with different points of view pertaining to django setup.</p>
+<p>Florian Apolloner very kindly summarised as follows:</p>
+<blockquote>
+<p>Supporting <code>distutils</code> and <code>setuptools</code> is a no-go since it makes the install process trickier and requires more testing.</p>
+<p><code>pip install</code> should "do the right thing (tm)" but still has a bug somewhere (to be determined) ...</p>
+<p>Wheels work just fine in python 2.X and are my preferred way of deploying.</p>
+</blockquote>
+<p>He adds:</p>
+<blockquote>
+<ul>
+<li>We are not going to support <code>setuptools</code> and <code>distutils</code>, this makes the setupprocess difficult to debug and test imo.</li>
+<li>Given Donald's "okay" we might switch to setuptools completely</li>
+<li>There seems to be a bug in pip when installing a wheel, which renders the django-admin.exe unusable on windows, help welcome</li>
+</ul>
+</blockquote>
+<h4>4-Dec-2013 Problem with number format when not using L10N</h4>
+<p>Yonel Ceruto González</p>
+<p>Related Ticket: #21544 Problem with number format when not using L10N (closed won't fix)</p>
+<p>Discussion threshing out the use of thousands separator in L10N.</p>
+<h4>10-Dec-2013 Enable longer wait in StoppableWSGIServer.shutdown / hardcoded parameter</h4>
+<p>is_null</p>
+<p>Shai Berger and Russ Magee</p>
+<p>Proposing a feature to make StoppableWSGIServer.shutdown wait time configurable, as it's currently hard-coded to being 2 seconds.</p>
+<h4>19-Dec-2013 LiveServerTestCase, and override_settings(DEBUG=True)</h4>
+<p>Harry Percival</p>
+<p>TestRunner forces DEBUG=False</p>
+<p>The discussion surrounded some unusual behaviour that was being caused by the TestRunner's debug setting being <code>False</code> by default.</p>
+<p>Russell instead explained that it had to do with the layers of serving</p>
+<p>Aymeric</p>
+<p>Related ticket: #21451 16-Nov-2013 (6 weeks ago)</p>
+<h4>20-Dec-2013 SchemaEditor Enhancements (3)</h4>
+<p>Michael Manfre</p>
+<p>He's working on MSSql support for 1.7 and there is a discussion regarding a range of schema details.</p>
+<h4>23-Dec-2013 Getting user's real IP address in Django</h4>
+<p>Val Neekman</p>
+<p>Proposing including <code>django-ipware</code> in core.</p>
+<p>IP addresses can be spoofed</p>
+<blockquote>
+<p>It makes sense not to provide a formal API</p>
+</blockquote>
+<h4>23-Dec-2013 Saving deleted code from Django source code</h4>
+<p>Vajrasky Kok</p>
+<p>Proposing Recapitalisation filter, he's posted this on activestate recipes.</p>
+<p>Russ reminds us when doing this to include the correct licensing</p>
+<p>You can include a snippet like this:</p>
+<div class="highlight"><pre><span class="err">\#</span> <span class="n">This</span> <span class="n">is</span> <span class="n">derived</span> <span class="n">from</span> <span class="n">code</span> <span class="n">provided</span> <span class="n">by</span> <span class="n">the</span> <span class="n">Django</span> <span class="n">Project</span><span class="p">.</span>
+<span class="err">\#</span> <span class="n">Original</span> <span class="n">code</span> <span class="n">is</span> <span class="n">licensed</span> <span class="n">under</span> <span class="n">the</span> <span class="n">terms</span> <span class="n">of</span> <span class="n">the</span> <span class="n">BSD</span> <span class="n">license</span><span class="p">.</span>
+<span class="err">\#</span> <span class="n">See</span> <span class="n">https</span><span class="o">:</span><span class="c1">//github.com/django/django/blob/master/LICENSE for full original license terms</span>
+</pre></div>
+
+
+<h4>24-Dec-2013 Django 1.7 - Named migration directory</h4>
+<p>Val Neekman</p>
+<p>Andrew Godwin confirmed that a setting called <code>MIGRATION_MODULES</code> already exists</p>
+            </div>
+            <!-- /.entry-content -->
+    <hr />
+    <section class="comments" id="comments">
+        <h2>Comments</h2>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'django-news-podcast'; // required: replace example with your forum shortname
+            var disqus_identifier = '2013-12-30-django-news-podcast';
+            var disqus_url = 'http://elena-django-podcast.github.io/2013-12-30-django-news-podcast.html';
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function () {
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
+                dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </section>
+        </article>
+    </section>
+
+        </div>
+        <div class="col-lg-3 well well-sm" id="sidebar">
+
+<aside>
+    <section>
+        <ul class="list-group list-group-flush">
+
+
+
+                <li class="list-group-item"><a href="http://elena-django-podcast.github.io/tags.html"><h4><i class="icon-tags icon-large"></i>Tags</h4></a></li>
+                        <li class="list-group-item tag-1">
+                            <a href="http://elena-django-podcast.github.io/tag/show-notes.html">
+                                show-notes
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://elena-django-podcast.github.io/tag/history.html">
+                                history
+                            </a>
+                        </li>
+        </ul>
+    </section>
+</aside>        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <hr>
+        <p class="pull-right"><i class="icon-arrow-up"></i> <a href="#">Back to top</a></p>
+
+
+        <p>&copy; 2014 Django Community &middot; >The Django News Podcast collects Django-related news. It is not formally affiliated with the Django Project.
+	  <a href="https://www.djangoproject.com/">Django</a> is a registered trademark of the Django Software Foundation.
+	  <a href="https://groups.google.com/forum/#!forum/django-developers">Django Developer List</a>
+	  <a href="https://github.com/elena/django-news-podcast.github.io">This website's source.</a>
+	  <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>
+	  <a href="http://getbootstrap.com" target="_blank">Bootstrap</a></p>
+    </div>
+</footer>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="http://elena-django-podcast.github.io/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="http://elena-django-podcast.github.io/theme/js/respond.min.js"></script>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'django-news-podcast'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script');
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+
+
+</body>
+</html>
