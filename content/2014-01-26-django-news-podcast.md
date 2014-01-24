@@ -12,7 +12,7 @@ To modify this file please update the *.md file in the `/content/` directory for
 
 | TODO LIST
 |
-| [X] Fix dates in title above
+| [x] Fix dates in title above
 | [ ] Adding releases
 | [ ] Security Updates (if exists)
 | [ ] Closing Dates
@@ -23,11 +23,13 @@ To modify this file please update the *.md file in the `/content/` directory for
 | [ ] (amorphous Community requests)
 | [ ] Show notes link
 | [ ] Django Dev List summary
+| [ ] Credits
 | ---
 | Other checks:
 | [ ] Check all dates replaced
 | [ ] Check for any significant at: http://www.planetdjango.org/
 | [ ] Check or add links
+| [ ] Check all names in credits
 | ---
 | Posting
 | [ ] Recording editing OK?
