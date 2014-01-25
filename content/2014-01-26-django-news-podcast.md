@@ -161,6 +161,8 @@ If you have any community requests for volunteers, support, sponsorship or other
 
 These show notes are "open source" on github so please be sure to make any corrections or additions at: [github.com/elena/django-news-podcast](https://github.com/elena/django-news-podcast/blob/master/9999_2013-12-29.md)
 
+Added todo list
+
 
 ## Lastly: Summary of Django Dev this month
 
@@ -181,8 +183,10 @@ There was also interesting discussion _[...]_
 
 _[Thread First Author]_
 
+_[Related Ticket: #nnn Verbatim title of ticket (ticket status)]_
+
 _[Summary of post]_
 
-_Add verbatim quotes:_
-_> quote_
+_Add verbatim quotes:_ <br>
+_> quote_ <br>
 _> quote_
