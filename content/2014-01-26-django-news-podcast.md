@@ -42,14 +42,63 @@ To modify this file please update the *.md file in the `/content/` directory for
 
 ```
 
+
+(1) Django sprint in Amsterdam, The Netherlands, Feb 22/23 |Jan 23 By Erik Romijn 1 post 24 views
+(1) Fixing #10811 Prevet assigning of unsaved model to Foreign Key |Jan 25 By anubhav joshi 1 post 20 views
+(1) Proposal of (another) podcast |12/29/13 By me 1 post 210 views
+(1) Re: Django doesn't give any feedback if it cannot connect to a DB |Jan 11 By Ramiro Morales 1 post 35 views
+(1) Re: python-social-auth partial pipeline can not resume |Jan 11 By Karen Tracey 1 post 25 views
+(1) Saving deleted code from Django source code |Jan 6 By Vajrasky Kok 3 posts 117 views
+(2) Class based lookups |Jan 12 By Anssi Kääriäinen 2 posts 46 views
+(2) Django Security & OWASP Project |Jan 20 By Michael Coates 2 posts 113 views
+(2) Merging GSoC 2013 - Validation Refactor |Jan 20 By Russell Keith-Magee 2 posts 78 views
+(2) New to Django - Question: All registered users to post content... |Jan 6 By Retnuh 2 posts 49 views
+(2) Patch fix for #21430 : Exception to be raised when unpickiling QuerySet across unsupported django version |Jan 18 By Prasoon Shukla 2 posts 44 views
+(2) Self-referenced template recursion handling |12/30/13 By unai 26 posts 251 views
+(2) [ANNOUNCE] Django 1.7 alpha 1 released |Jan 23 By James Bennett 2 posts 53 views
+(2) permit global change of BaseForm.label_suffix |Jan 15 By Tilman Koschnick 2 posts 49 views
+(3) CAS in cache framework |Jan 18 By Alexey Moskvin 3 posts 51 views
+(3) Consider allowing customization of ModelForm's init parameters in contrib.admin |Jan 16 By tyrion-mx 3 posts 43 views
+(3) Consider reopening ticket #11385 |Jan 8 By Andres Osinski 3 posts 70 views
+(3) Re: Digest for django-d...@googlegroups.com - 1 Message in 1 Topic |Jan 3 By shmengie 3 posts 50 views
+(3) Schema editor changes feedback request |Jan 6 By Michael Manfre 3 posts 59 views
+(3) Should exceptions in dev server appear as tracebacks in the console by default? |Jan 16 By Harry Percival 3 posts 93 views
+(3) django.core.checks.register shouldn't be (primarily) a decorator |Jan 23 By Shai Berger 3 posts 44 views
+(3) django_bash_completion in Pypi Package |Jan 7 By Brett Nekolny 3 posts 74 views
+(3) python querry on firebug extention . |Jan 13 By JAI PRAKASH SINGH 3 posts 41 views
+(4) Quick question re typo-fixing etiquette |Jan 25 By James Turley 4 posts 43 views
+(5) Is it a mistake on docs for django 1.5? |Jan 21 By Leonardo Borges Avelino 5 posts 51 views
+(5) Website integrated mobile app for disaster |Jan 12 By unk...@googlegroups.com 5 posts 87 views
+(6) Forbidding double imports |Jan 7 By Aymeric Augustin 6 posts 101 views
+(8) Thoughts on defining and autoimporting signals.py |Jan 16 By Daniel Sokolowski 8 posts 396 views
+(8) Ticket #21751 review requested |Jan 22 By Michael Manfre 8 posts 98 views
+(10) Feature request: post/pre commit/rollback signals |Jan 19 By Jesús Espino 10 posts 137 views
+(10) Feature request: serve_file() view in static app |Jan 20 By Rivo Laks 10 posts 111 views
+(12) Migrations and swappable models/AUTH_USER_MODEL |Jan 12 By Andrew Godwin 12 posts 123 views
+(13) 1.7 Schema migrations and AUTH_PROFILE_MODULE / get_profile() deprecation |Jan 25 By Brian Neal 13 posts 71 views
+(13) Must a Django Database Support Migrations? |Jan 23 By Michael Manfre 13 posts 89 views
+(16) Renaming apps.has_app |Jan 7 By Aymeric Augustin 16 posts 90 views
+(17) Enforce the use of a unicode string in settings.LANGUAGES |Jan 23 By Henrique Romano 17 posts 78 views
+(17) Recommending a Python 3-compatible MySQL connector |Jan 23 By Aymeric Augustin 17 posts 1644 views
+(19) Improving aggregate support (#14030) |Jan 20 By Josh Smeaton 24 posts 399 views
+(24) App-loading: Pragmatic concerns about default AppConfig objects and ready() implementations (24) |Jan 25 By Russell Keith-Magee 24 posts 178 views
+(31) App-loading reloaded |Jan 14 By Aymeric Augustin 47 posts 804 views
+(7) Testing parameters in database settings |Jan 20 By Shai Berger 7 posts 65 views
+
+(#21340) Using setuptools to make django-admin.py runnable on Windows |12/30/13 By Remram 15 posts 215 views
+
 ---
 
 Welcome to Django's News and Updates podcast, the accompanying podcast to Django's blog and update email.
 
 These are the update for the 28 days up to _[Dth Mmmmm YYYY]_
 
-    The latest release of Django is: X.X.X
-    The latest release of Python is: X.X.X
+    The latest release of Django is: 1.6.1
+    The latest release of Python is: 3.3.3
+	The current production versions are Python 2.7.6 and Python 3.3.3.
+
+The latest official version is 1.6.1.
+The current production versions are 2.7.6 and 3.3.3.
 
 ## 0. Security
 
