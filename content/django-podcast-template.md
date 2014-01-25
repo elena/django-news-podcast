@@ -38,7 +38,7 @@ To modify this file please update the *.md file in the `/content/` directory for
 | [ ] Upload to soundcloud
 | [ ] Move from 'drafts' to 'content'
 | [ ] Tweet
-| [>] Delete this list
+| [>] Delete this list from this file and publish notes
 
 ```
 
@@ -48,8 +48,8 @@ Welcome to Django's News and Updates podcast, the accompanying podcast to Django
 
 These are the update for the 28 days up to _[Dth Mmmmm YYYY]_
 
-    The latest release of Django is: X.X.X
-    The latest release of Python is: X.X.X
+    The latest stable release of Django is: X.X.X
+    The latest stable release of Python is: X.X.X
 
 ## 0. Security
 
@@ -176,8 +176,10 @@ There was also interesting discussion _[...]_
 
 _[Thread First Author]_
 
+_[Related Ticket: #nnn Verbatim title of ticket (ticket status)]_
+
 _[Summary of post]_
 
-_Add verbatim quotes:_
-_> quote_
+_Add verbatim quotes:_ <br>
+_> quote_ <br>
 _> quote_
