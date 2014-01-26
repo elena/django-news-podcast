@@ -51,10 +51,26 @@ To modify this file please update the *.md file in the `/content/` directory for
 
 Welcome to Django's News and Updates podcast, the accompanying podcast to Django's blog and update email.
 
-These are the update for the 28 days up to 26th January 2014
+## Preamble/Introduction
+
+These are the updates for the 28 days up to 26th January 2014
 
 	The latest official version of Django is 1.6.1.
 	The current production versions of Python are 2.7.6 and 3.3.3.
+
+Usual format:
+- Release information
+- News and Upcoming Events
+
+Bonus:
+- Interview with Andrew Godwin about 1.7 release
+- Interview with Russell Keith-Magee about App refactor
+- Dev List Summary
+
+
+There were no security updates during this period.
+
+Firstly:
 
 ## 1. Upcoming cut-off and closing dates
 
@@ -64,11 +80,18 @@ These are the update for the 28 days up to 26th January 2014
 07-Feb-2014 Django Weekend Cardiff
 22-23 Feb 2014 PyCon Philipines
 
+---
+
 ## 2. Releases
 
 ### Minor Releases ##
 
-Django 1.7 alpha 1 released
+---
+
+[ANNOUNCE] Django 1.7 alpha 1 released
+
+Posted by James Bennett on January 22, 2014
+
 As part of the Django 1.7 release process, today we've released Django 1.7 alpha 1, a preview/testing package that represents the first stage in the 1.7 release cycle and an opportunity for you to try out some of the changes coming in Django 1.7.
 
 Django 1.7 will bring several major new features to Django, along with a host of other improvements. Highlights include a schema-migration framework, a new validation tool to help identify and fix common errors, a complete refactoring of how Django identifies and loads applications, and support for custom database lookups.
@@ -79,34 +102,26 @@ As with all alpha and beta packages, this is not for production use. But if you'
 
 In addition to the changes covered in the release notes, there are two already-noted issues to be aware of when using the 1.7 alpha package:
 
-Issue #21856 -- an empty value for the DATABASES setting will cause a crash.
-Issue #21831 -- using the contenttypes package or GenericForeignKey will fail unless django.contrib.auth is in INSTALLED_APPS.
+- Issue #21856 -- an empty value for the DATABASES setting will cause a crash.
+- Issue #21831 -- using the contenttypes package or GenericForeignKey will fail unless django.contrib.auth is in INSTALLED_APPS.
+
 Both of these will be fixed prior to the final 1.7 release.
 
 Additionally, users of South (a popular third-party package for schema migrations) should note that South is not compatible with the 1.7 alpha.
 
-Posted by James Bennett on January 22, 2014
+---
 
 [Interview with Andrew Godwin]
 
+---
+
 ## 3. News
 
-_[### Post Title]_
-
-Posted by _[Post Author]_ on _[Month D, YYYY]_
-
-_[Post]_
-
+There was no official "news" items so far this month, but there was one of the largest bit of "unofficial" news that there's been perhaps in years:
 
 ### Other News
 
-_[Any other news]_
-
-"I have a big announcement: at the end of 2013, I married @pydanny. I'm so happy & proud to be with my new husband."
-
-10-Jan-2014
-"Just ordered the very first proof of Two Scoops of Django 1.6. Should arrive on Monday. Wahoo!"
-
+---
 
 Adrian and Jacob retiring as Django BDFLs
 Written by Adrian Holovaty on January 13, 2014
@@ -115,6 +130,8 @@ Adrian said:
 
 > Since July 2005, when Django was open-sourced, Jacob Kaplan-Moss and I have been the two Benevolent Dictators For Life (BDFLs) of the project. Today we're both retiring from our formal BDFL roles, given that (1) we don't have the time for it that we once had and (2) Django is in great shape with a vibrant community of contributors.
 >
+> ...
+>
 > "If you're a Django user, though, have no fear. Honestly, this title seems like a big change "on paper," but in reality it won't change much. "
 >
 
@@ -122,10 +139,61 @@ Jacob said:
 
 We reject kings, presidents and voting. We believe in rough consensus and running code.
 
-—The Tao of the IETF
+—The Tao of the Internet Engineering Task Force (IETF)
+
+> For me, this has been a long time coming — I’ve been thinking about this for at least a year. .. this is a similar to a lot of the changes we’ve made over the years: it’s a formalization, and a naming, of what’s already happened.
+
+I think this decision goes to show how strong, humble, dedicated and honest our community and particularly the leaders of our community are. This is perhaps one of the elements which makes the Django project as strong as it is.
+
+---
+
+##### Roy Greenfeld marriage
+
+In softer news:
+
+On the 10-Jan-2014 Audrey Roy tweeted that: " at the end of 2013, she married @pydanny."
+
+I believe that they'll now both be going by the surname "Roy Greenfeld".
+
+Some of their notable collaborative acheivements since they met through PyCon diversity grant in 2010:
+- Audrey founded PyLadies
+- Co-authored Two Scoops
+- responsible for DjangoPackages as well as both Python Cookiecutter and Django Cookiecutter
+- keynoted several conferences
 
 
->For me, this has been a long time coming — I’ve been thinking about this for at least a year. In many ways, I this is a similar to a lot of the changes we’ve made over the years: it’s a formalization, and a naming, of what’s already happened. It’s clear to me I don’t have the sort of day-to-day involvement that I once had,
+Tireless work: blogs, talks
+
+##### Two Scoops of Django 1.6
+
+This has not stopped them from being their usual prolific and generous selves, on the same day they tweeted that;
+
+"very first proof of **Two Scoops of Django 1.6** should arrive " to them shortly. Looking forward to that release and they tell me it should be available in _[SOON]_
+
+---
+
+
+##### KickStarter: "Real Python: Advanced Web Development, featuring Django 1.6" by Jeremy Johnson
+
+realpython.com tutorials kickstarter
+
+Successfully funded on 15 January
+
+1,446 backers
+$50,001 pledged (of $3,500 goal)
+
+This is for students, developers, entrepreneurs, and really anyone who wants to learn web development best practices via Python and Django 1.6 in order to start developing their own web development projects. Technologies/languages covered: Python, Django, Heroku, Git, HTML5, CSS, JavaScript/jQuery, MongoDB, Postgres, SQL, Github, Bootstrap 3, REST, AJAX, Vim, Selenium ...
+
+The Real Python team has successfully delivered two other KickStarter projects.
+We've done this before and know what to expect - and we're doing it again! Our timeline is clear and realistic. We will deliver on this project.
+
+
+Back in Sept 2012, Kenneth Love.
+$13,354
+pledged of $5,000 goal
+
+
+
 
 ## 4. Conferences/Events
 
