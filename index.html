@@ -1,221 +1,167 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:og="http://ogp.me/ns#"
-      xmlns:fb="https://www.facebook.com/2008/fbml">
-<head>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Django News Podcast : Django&#39;s News and Updates podcast, the accompanying podcast to Django&#39;s blog and update email. This podcast is intended to provide brief summary coverage of the current activity in the Django community." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
     <title>Django News Podcast</title>
-    <!-- Using the latest rendering mode for IE -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
 
-    <!-- Open Graph tags -->
+  <body>
 
-            <meta property="og:type" content="website"/>
-            <meta property="og:title" content="Django News Podcast"/>
-            <meta property="og:url" content="http://elena.github.io/django-news-podcast"/>
-            <meta property="og:description" content="Django News Podcast"/>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/elena/django-news-podcast">View on GitHub</a>
 
-    <!-- Bootstrap -->
-        <link rel="stylesheet" href="http://elena.github.io/django-news-podcast/theme/css/bootstrap.min.css" type="text/css"/>
-    <link href="http://elena.github.io/django-news-podcast/theme/css/font-awesome.min.css" rel="stylesheet">
-    <link href="http://elena.github.io/django-news-podcast/theme/css/pygments.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://elena.github.io/django-news-podcast/theme/css/style.css" type="text/css"/>
-    <!-- JavaScript plugins (requires jQuery) -->
-    <script src="http://code.jquery.com/jquery.js"></script>
+          <h1 id="project_title">Django News Podcast</h1>
+          <h2 id="project_tagline">Django&#39;s News and Updates podcast, the accompanying podcast to Django&#39;s blog and update email. This podcast is intended to provide brief summary coverage of the current activity in the Django community.</h2>
 
-        <link href="http://elena.github.io/django-news-podcast/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
-              title="Django News Podcast ATOM Feed"/>
-
-    <script type="text/javascript">
-
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-47162669-1']);
-        _gaq.push(['_trackPageview']);
-
-        (function () {
-            var ga = document.createElement('script');
-            ga.type = 'text/javascript';
-            ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(ga, s);
-        })();
-
-    </script>
-</head>
-<body>
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="http://elena.github.io/django-news-podcast" class="navbar-brand">Django News Podcast</a>
-        </div>
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-                        <li >
-                            <a href="http://elena.github.io/django-news-podcast/category/misc.html">Misc</a>
-                        </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="http://elena.github.io/django-news-podcast/archives.html"><i class="icon-th-list"></i>Archives</a></li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/elena/django-news-podcast/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/elena/django-news-podcast/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
     </div>
-</nav>
-<!-- /.navbar -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-9">
-            <article>
-                <h2><a href="http://elena.github.io/django-news-podcast/2014-01-26-django-news-podcast.html">Django News Podcast 26-Jan-2014</a></h2>
-                <div class="summary"><hr />
-<div class="highlight"><pre><span class="o">|</span> <span class="n">TODO</span> <span class="n">LIST</span>
-<span class="o">|</span>
-<span class="o">|</span> <span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="n">Fix</span> <span class="n">dates</span> <span class="n">in</span> <span class="n">title</span> <span class="n">above</span>
-<span class="o">|</span> <span class="p">[</span> <span class="p">]</span> <span class="n">Adding</span> <span class="n">releases</span>
-<span class="o">|</span> <span class="p">[</span> <span class="p">]</span> <span class="n">Security</span> <span class="n">Updates</span> <span class="p">(</span><span class="n">optional</span><span class="p">)</span>
-<span class="o">|</span> <span class="p">[</span> <span class="p">]</span> <span class="n">Closing</span> <span class="n">Dates</span>
-<span class="o">|</span> <span class="p">[</span> <span class="p">]</span> <span class="n">Releases</span>
-<span class="o">|</span> <span class="p">[</span> <span class="p">]</span> <span class="n">Update</span> <span class="n">News</span> <span class="n">from</span> <span class="n">blog</span>
-<span class="o">|</span> <span class="p">[</span> <span class="p">]</span> <span class="p">(</span><span class="n">amorphous</span> <span class="s">&quot;Other News&quot;</span><span class="p">)</span>
-<span class="o">|</span> <span class="p">[</span> <span class="p">]</span> <span class="n">Conference</span><span class="o">/</span><span class="n">Event</span> <span class="n">listing</span>
-<span class="o">|</span> <span class="p">[</span> <span class="p">]</span> <span class="p">(</span><span class="n">amorphous</span> <span class="n">Community</span> <span class="n">requests</span><span class="p">)</span>
-<span class="o">|</span> <span class="p">[</span> <span class="p">]</span> <span class="n">Show</span> <span class="n">notes</span> <span class="n">link</span>
-<span class="o">|</span> <span class="p">[</span> <span class="p">]</span> <span class="n">Django</span> <span class="n">Dev</span> <span class="n">List</span> <span class="n">summary</span>
-<span class="o">|</span> <span class="o">---</span>
-<span class="o">|</span> <span class="n">Other</span> <span class="n">checks</span><span class="o">:</span>
-<span class="o">|</span> <span class="p">[</span> <span class="p">]</span> <span class="n">Check</span> <span class="n">all</span> <span class="n">dates</span> <span class="n">replaced</span>
-<span class="o">|</span> <span class="p">[</span> <span class="p">]</span> <span class="n">Check</span> <span class="k">for</span> <span class="n">any</span> <span class="n">significant</span> <span class="n">at</span><span class="o">:</span> <span class="n">http</span><span class="o">:</span><span class="c1">//www.planetdjango ...</span></pre></div>
-                    <a class="btn btn-default btn-xs" href="http://elena.github.io/django-news-podcast/2014-01-26-django-news-podcast.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="http://elena.github.io/django-news-podcast/django-podcast-history.html">Django Podcast History</a></h2>
-                <div class="summary"><p>An ongoing process:</p>
-<h2>2013</h2>
-<p>http://roundup.lincolnloop.com/</p>
-<p>https://github.com/lincolnloop/round-up</p>
-<h3>Episodes</h3>
-<h4>#18 - Worksforme</h4>
-<p>November 11th, 2013 (1:08:35)</p>
-<p>Jacob Kaplan-Moss</p>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>December 2013</p>
+
+<p>This project has been on the mind of the author for several years and is motivated at this time because of the following:</p>
+
 <ul>
-<li>Co-creator of Django</li>
-<li>Founder of the Django Software Foundation</li>
-<li>Frequent speaker at Open Source events and conferences</li>
-<li>Currently works at Heroku</li>
+<li>Recent discussions by DSF about how to effectively disseminate news.</li>
+<li>Recent <a href="https://www.djangoproject.com/weblog/2013/dec/09/reviving-django-update-posts/">revival of Django Updates posts</a>.</li>
+<li>Recent cessation of most recent incarnation of Django podcast: <a href="http://roundup.lincolnloop.com/">Django Roundup</a>.</li>
+</ul><p>Transferred from bitbucket project here: <a href="https://bitbucket.org/elequ/podcast-project/wiki/Home">https://bitbucket.org/elequ/podcast-project/wiki/Home</a></p>
+
+<hr><h1>
+<a name="general-podcast-guidelines" class="anchor" href="#general-podcast-guidelines"><span class="octicon octicon-link"></span></a>General Podcast guidelines</h1>
+
+<ul>
+<li>Purpose</li>
+<li>Schedule</li>
+<li>Format</li>
+<li>Discussion Guidelines</li>
+</ul><h2>
+<a name="purpose" class="anchor" href="#purpose"><span class="octicon octicon-link"></span></a>Purpose</h2>
+
+<p>Purpose:</p>
+
+<ol>
+<li>
+<em>Release</em> information</li>
+<li>Official news</li>
+<li>Major* community projects</li>
+</ol><p>News reportage style.</p>
+
+<p>Effectively reading official blog out loud.</p>
+
+<h2>
+<a name="format" class="anchor" href="#format"><span class="octicon octicon-link"></span></a>Format</h2>
+
+<p>Natural priority:</p>
+
+<ul>
+<li>Security Releases</li>
+<li>Major Releases
+
+<ul>
+<li>features</li>
+<li>deprecations</li>
 </ul>
-<h4>#17 - We Don't Know ...</h4>
-                    <a class="btn btn-default btn-xs" href="http://elena.github.io/django-news-podcast/django-podcast-history.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="http://elena.github.io/django-news-podcast/2013-12-30-django-news-podcast.html">Django News Podcast 30-Dec-2013</a></h2>
-                <div class="summary"><hr />
-<p>Welcome to Django's News and Updates podcast, the accompanying podcast to Django's blog and update email.</p>
-<p>These are the update for the 28 days up to 29th December 2013</p>
-<div class="highlight"><pre><span class="n">The</span> <span class="n">latest</span> <span class="n">release</span> <span class="n">of</span> <span class="n">Django</span> <span class="n">is</span><span class="o">:</span> <span class="mf">1.6.1</span>
-<span class="n">The</span> <span class="n">latest</span> <span class="n">release</span> <span class="n">of</span> <span class="n">Python</span> <span class="n">is</span><span class="o">:</span> <span class="mf">3.3.3</span>
-</pre></div>
+</li>
+<li>Minor Releases
 
+<ul>
+<li>features</li>
+<li>deprecations</li>
+</ul>
+</li>
+<li>Updates</li>
+<li>Upcoming Conferences/Events</li>
+<li><p>Community requests</p></li>
+<li>
+<p>other "important" packages? Criteria for "important" could be something like:</p>
 
-<h2>0 ...</h2>
-                    <a class="btn btn-default btn-xs" href="http://elena.github.io/django-news-podcast/2013-12-30-django-news-podcast.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="http://elena.github.io/django-news-podcast/YYYY-MM-DD-django-news-podcast.html">Django News Podcast D-Mmm-YYYY</a></h2>
-                <div class="summary"><hr />
-<div class="highlight"><pre><span class="o">|</span> <span class="n">TODO</span> <span class="n">LIST</span>
-<span class="o">|</span>
-<span class="o">|</span> <span class="p">[</span> <span class="p">]</span> <span class="n">Fix</span> <span class="n">dates</span> <span class="n">in</span> <span class="n">title</span> <span class="n">above</span>
-<span class="o">|</span> <span class="p">[</span> <span class="p">]</span> <span class="n">Adding</span> <span class="n">releases</span>
-<span class="o">|</span> <span class="p">[</span> <span class="p">]</span> <span class="n">Security</span> <span class="n">Updates</span> <span class="p">(</span><span class="n">optional</span><span class="p">)</span>
-<span class="o">|</span> <span class="p">[</span> <span class="p">]</span> <span class="n">Closing</span> <span class="n">Dates</span>
-<span class="o">|</span> <span class="p">[</span> <span class="p">]</span> <span class="n">Releases</span>
-<span class="o">|</span> <span class="p">[</span> <span class="p">]</span> <span class="n">Update</span> <span class="n">News</span> <span class="n">from</span> <span class="n">blog</span>
-<span class="o">|</span> <span class="p">[</span> <span class="p">]</span> <span class="p">(</span><span class="n">amorphous</span> <span class="s">&quot;Other News&quot;</span><span class="p">)</span>
-<span class="o">|</span> <span class="p">[</span> <span class="p">]</span> <span class="n">Conference</span><span class="o">/</span><span class="n">Event</span> <span class="n">listing</span>
-<span class="o">|</span> <span class="p">[</span> <span class="p">]</span> <span class="p">(</span><span class="n">amorphous</span> <span class="n">Community</span> <span class="n">requests</span><span class="p">)</span>
-<span class="o">|</span> <span class="p">[</span> <span class="p">]</span> <span class="n">Show</span> <span class="n">notes</span> <span class="n">link</span>
-<span class="o">|</span> <span class="p">[</span> <span class="p">]</span> <span class="n">Django</span> <span class="n">Dev</span> <span class="n">List</span> <span class="n">summary</span>
-<span class="o">|</span> <span class="o">---</span>
-<span class="o">|</span> <span class="n">Other</span> <span class="n">checks</span><span class="o">:</span>
-<span class="o">|</span> <span class="p">[</span> <span class="p">]</span> <span class="n">Check</span> <span class="n">all</span> <span class="n">dates</span> <span class="n">replaced</span>
-<span class="o">|</span> <span class="p">[</span> <span class="p">]</span> <span class="n">Check</span> <span class="k">for</span> <span class="n">any</span> <span class="n">significant</span> <span class="n">at</span><span class="o">:</span> <span class="n">http</span><span class="o">:</span><span class="c1">//www.planetdjango.org ...</span></pre></div>
-                    <a class="btn btn-default btn-xs" href="http://elena.github.io/django-news-podcast/YYYY-MM-DD-django-news-podcast.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
+<ul>
+<li>potential to be integrated</li>
+<li>was once part of project</li>
+<li>major work by core contributor</li>
+</ul>
+</li>
+</ul><h2>
+<a name="schedule" class="anchor" href="#schedule"><span class="octicon octicon-link"></span></a>Schedule</h2>
 
-        </div>
-        <div class="col-lg-3 well well-sm" id="sidebar">
+<p>Very clear schedule and format.</p>
 
-<aside>
-    <section>
-        <ul class="list-group list-group-flush">
+<h4>
+<a name="timing" class="anchor" href="#timing"><span class="octicon octicon-link"></span></a>Timing</h4>
 
+<ul>
+<li>Regular "period" -- to synchronise with every second official update email.</li>
+<li>Major release special with Release manager?</li>
+</ul><h2>
+<a name="discussion-guidelines" class="anchor" href="#discussion-guidelines"><span class="octicon octicon-link"></span></a>Discussion Guidelines</h2>
 
+<ul>
+<li>Assume "Intelligent Listener"</li>
+<li>Sparse rather than chatty</li>
+<li>Provide technical background:
 
-                <li class="list-group-item"><a href="http://elena.github.io/django-news-podcast/tags.html"><h4><i class="icon-tags icon-large"></i>Tags</h4></a></li>
-                        <li class="list-group-item tag-1">
-                            <a href="http://elena.github.io/django-news-podcast/tag/show-notes.html">
-                                show-notes
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="http://elena.github.io/django-news-podcast/tag/history.html">
-                                history
-                            </a>
-                        </li>
-        </ul>
-    </section>
-</aside>        </div>
+<ul>
+<li>design decisions</li>
+<li>details about decision-making process</li>
+<li>friction about the decision and its resolution (or not)</li>
+</ul>
+</li>
+<li>Deference to author:
+
+<ul>
+<li>person who created/worked on the feature</li>
+<li>has greatest depth of knowledge</li>
+</ul>
+</li>
+<li>Speak to personal expertise</li>
+<li>As a Reference:
+
+<ul>
+<li>"like a dictionary": won't teach you to read, but doesn't assume exaustive knowledge</li>
+</ul>
+</li>
+<li>Don't speak if you don't have experience/expertise</li>
+<li>Stay "en piste"</li>
+<li>Minimal editorialising</li>
+<li>Minimal hyperbole</li>
+</ul>
+      </section>
     </div>
-</div>
-<footer>
-    <div class="container">
-        <hr>
-        <p class="pull-right"><i class="icon-arrow-up"></i> <a href="#">Back to top</a></p>
 
-
-        <p>&copy; 2014 Django Community &middot; >The Django News Podcast collects Django-related news. It is not formally affiliated with the Django Project.
-	  <a href="https://www.djangoproject.com/">Django</a> is a registered trademark of the Django Software Foundation.
-	  <a href="https://groups.google.com/forum/#!forum/django-developers">Django Developer List</a>
-	  <a href="https://github.com/elena/django-news-podcast.github.io">This website's source.</a>
-	  <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>
-	  <a href="http://getbootstrap.com" target="_blank">Bootstrap</a></p>
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Django News Podcast maintained by <a href="https://github.com/elena">elena</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
     </div>
-</footer>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="http://elena.github.io/django-news-podcast/theme/js/bootstrap.min.js"></script>
 
-<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-<script src="http://elena.github.io/django-news-podcast/theme/js/respond.min.js"></script>
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'django-news-podcast'; // required: replace example with your forum shortname
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function () {
-            var s = document.createElement('script');
-            s.async = true;
-            s.type = 'text/javascript';
-            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-        }());
-    </script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-45876614-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
 
 
-</body>
+  </body>
 </html>
