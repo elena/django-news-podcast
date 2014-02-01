@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Django News Podcast : The accompanying podcast to Django&#39;s blog and update email. " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Django News Podcast</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/elena/django-news-podcast">View on GitHub</a>
+
+          <h1 id="project_title">Django News Podcast</h1>
+          <h2 id="project_tagline">The accompanying podcast to Django&#39;s blog and update email. </h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/elena/django-news-podcast/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/elena/django-news-podcast/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <hr><p>Welcome to Django's News and Updates podcast, the accompanying podcast to Django's blog and update email.</p>
+
+<h2>
+<a name="preambleintroduction" class="anchor" href="#preambleintroduction"><span class="octicon octicon-link"></span></a>Preamble/Introduction</h2>
+
+<p>These are the updates for the 28 days up to 26th January 2014</p>
+
+<pre><code>The latest official version of Django is 1.6.1.
+The current production versions of Python are 2.7.6 and 3.3.3.
+</code></pre>
+
+<p>This podcast is intended to provide brief summary coverage of the current activity in the Django community.</p>
+
+<ul>
+<li>Release information</li>
+<li>News and Upcoming Events</li>
+</ul><p>Bonus:</p>
+
+<ul>
+<li>Interview with Andrew Godwin about 1.7 release</li>
+<li>Interview with Russell Keith-Magee about the new Validation tool and some background to the App refactor</li>
+<li>Dev List Summary</li>
+</ul><p>There were no security updates during this period.</p>
+
+<p>Firstly:</p>
+
+<h2>
+<a name="1-upcoming-cut-off-and-closing-dates" class="anchor" href="#1-upcoming-cut-off-and-closing-dates"><span class="octicon octicon-link"></span></a>1. Upcoming cut-off and closing dates</h2>
+
+<p>(things that are happening in the next 4 weeks)</p>
+
+<p>01-Feb-2014 DjangoCon Europe -- Call for speakers closes 1st February 2014 <br>
+07-Feb-2014 Django Weekend Cardiff <br>
+22-Feb-2014 Django sprint in Amsterdam, The Netherlands <br>
+22-23 Feb 2014 PyCon Philipines
+Kenneth Love tweeted Tutorials are selling out fast so</p>
+
+<hr><h2>
+<a name="2-releases" class="anchor" href="#2-releases"><span class="octicon octicon-link"></span></a>2. Releases</h2>
+
+<h3>
+<a name="minor-releases" class="anchor" href="#minor-releases"><span class="octicon octicon-link"></span></a>Minor Releases</h3>
+
+<hr><p>[ANNOUNCE] Django 1.7 alpha 1 released</p>
+
+<p>Posted by James Bennett on January 22, 2014</p>
+
+<p>As part of the Django 1.7 release process, today we've released Django 1.7 alpha 1, a preview/testing package that represents the first stage in the 1.7 release cycle and an opportunity for you to try out some of the changes coming in Django 1.7.</p>
+
+<p>Django 1.7 will bring several major new features to Django, along with a host of other improvements. Highlights include a schema-migration framework, a new validation tool to help identify and fix common errors, a complete refactoring of how Django identifies and loads applications, and support for custom database lookups.</p>
+
+<p>For full details, see the in-development 1.7 release notes.</p>
+
+<p>As with all alpha and beta packages, this is not for production use. But if you'd like to take some of the new features for a spin, or to help find and fix bugs (which should be reported to the issue tracker), you can grab a copy of the alpha package from our downloads page. And as always, signed MD5 and SHA1 checksums of the 1.7 alpha package are available.</p>
+
+<p>In addition to the changes covered in the release notes, there are two already-noted issues to be aware of when using the 1.7 alpha package:</p>
+
+<ul>
+<li>Issue #21856 -- an empty value for the DATABASES setting will cause a crash.</li>
+<li>Issue #21831 -- using the contenttypes package or GenericForeignKey will fail unless django.contrib.auth is in INSTALLED_APPS.</li>
+</ul><p>Both of these will be fixed prior to the final 1.7 release.</p>
+
+<p>Additionally, users of South (a popular third-party package for schema migrations) should note that South is not compatible with the 1.7 alpha.</p>
+
+<hr><p>[Interview with Andrew Godwin:</p>
+
+<ul>
+<li>Release Management</li>
+<li>Release Cycle</li>
+<li>Features</li>
+<li>Schema Migrations
+]</li>
+</ul><p>[Interview with Russell Keith-Magee:</p>
+
+<ul>
+<li>Validation/System Check framework</li>
+<li>Google Summer of Code (GSoC) process and applications</li>
+<li>Django Trademark
+]</li>
+</ul><hr><p>Other non-Django recent releases to be aware of:</p>
+
+<p>Sentry 6.4.4 -- 29-Dec
+Pillow 2.3.0 -- 1-Jan
+Django Debug Toolbar 1.0.1 -- 7-Jan
+Django Extensions 1.3.0 -- 7-Jan</p>
+
+<h2>
+<a name="3-news" class="anchor" href="#3-news"><span class="octicon octicon-link"></span></a>3. News</h2>
+
+<p>There was no official "news" items so far this month, but there was one of the largest bit of "unofficial" news that there's been perhaps in years:</p>
+
+<h3>
+<a name="other-news" class="anchor" href="#other-news"><span class="octicon octicon-link"></span></a>Other News</h3>
+
+<hr><p>Adrian and Jacob retiring as Django BDFLs
+Written by Adrian Holovaty on January 13, 2014</p>
+
+<p>Adrian said:</p>
+
+<blockquote>
+<p>Since July 2005, when Django was open-sourced, Jacob Kaplan-Moss and I have been the two Benevolent Dictators For Life (BDFLs) of the project. Today we're both retiring from our formal BDFL roles, given that (1) we don't have the time for it that we once had and (2) Django is in great shape with a vibrant community of contributors.</p>
+
+<p>...</p>
+
+<p>"If you're a Django user, though, have no fear. Honestly, this title seems like a big change "on paper," but in reality it won't change much. "</p>
+</blockquote>
+
+<p>Jacob said:</p>
+
+<p>We reject kings, presidents and voting. We believe in rough consensus and running code.</p>
+
+<p>—The Tao of the Internet Engineering Task Force (IETF)</p>
+
+<blockquote>
+<p>For me, this has been a long time coming — I’ve been thinking about this for at least a year. .. this is a similar to a lot of the changes we’ve made over the years: it’s a formalization, and a naming, of what’s already happened.</p>
+</blockquote>
+
+<p>I think this decision goes to show how strong, humble, dedicated and honest our community and particularly the leaders of our community are. This is perhaps one of the elements which makes the Django project as strong as it is.</p>
+
+<hr><h5>
+<a name="roy-greenfeld-marriage" class="anchor" href="#roy-greenfeld-marriage"><span class="octicon octicon-link"></span></a>Roy Greenfeld marriage</h5>
+
+<p>In softer news:</p>
+
+<p>On the 10-Jan-2014 Audrey Roy tweeted that: " at the end of 2013, she married <a href="https://github.com/pydanny" class="user-mention">@pydanny</a>."</p>
+
+<p>I believe that they'll now both be going by the surname "Roy Greenfeld".</p>
+
+<p>Some of their notable collaborative acheivements since they met through PyCon diversity grant in 2010:</p>
+
+<ul>
+<li>Audrey founded PyLadies</li>
+<li>Co-authored Two Scoops</li>
+<li>responsible for DjangoPackages as well as both Python Cookiecutter and Django Cookiecutter</li>
+<li>keynoted several conferences</li>
+</ul><p>Tireless work: blogs, talks</p>
+
+<h5>
+<a name="two-scoops-of-django-16" class="anchor" href="#two-scoops-of-django-16"><span class="octicon octicon-link"></span></a>Two Scoops of Django 1.6</h5>
+
+<p>This has not stopped them from being their usual prolific and generous selves, on the same day they tweeted that;</p>
+
+<p>"very first proof of <strong>Two Scoops of Django 1.6</strong> should arrive " to them shortly. Looking forward to that release and they tell me it should be available in <em>[SOON]</em></p>
+
+<p>"It's pretty likely"</p>
+
+<hr><h5>
+<a name="kickstarter-real-python-advanced-web-development-featuring-django-16-by-jeremy-johnson" class="anchor" href="#kickstarter-real-python-advanced-web-development-featuring-django-16-by-jeremy-johnson"><span class="octicon octicon-link"></span></a>KickStarter: "Real Python: Advanced Web Development, featuring Django 1.6" by Jeremy Johnson</h5>
+
+<p>realpython.com tutorials kickstarter</p>
+
+<p>Successfully funded on 15 January</p>
+
+<p>1,446 backers
+$50,001 pledged (of $3,500 goal)</p>
+
+<p>This is for students, developers, entrepreneurs, and really anyone who wants to learn web development best practices via Python and Django 1.6 in order to start developing their own web development projects. Technologies/languages covered: Python, Django, Heroku, Git, HTML5, CSS, JavaScript/jQuery, MongoDB, Postgres, SQL, Github, Bootstrap 3, REST, AJAX, Vim, Selenium ...</p>
+
+<p>The Real Python team has successfully delivered two other KickStarter projects.
+We've done this before and know what to expect - and we're doing it again! Our timeline is clear and realistic. We will deliver on this project.</p>
+
+<p>Back in Sept 2012, Kenneth Love.
+$13,354 pledged (of $5,000 goal)</p>
+
+<h2>
+<a name="4-conferencesevents" class="anchor" href="#4-conferencesevents"><span class="octicon octicon-link"></span></a>4. Conferences/Events</h2>
+
+<h4>
+<a name="django-sprint-in-amsterdam-the-netherlands" class="anchor" href="#django-sprint-in-amsterdam-the-netherlands"><span class="octicon octicon-link"></span></a>Django sprint in Amsterdam, The Netherlands</h4>
+
+<p>Posted by Russell Keith-Magee and Erik Romijn on January 23, 2014</p>
+
+<p>We're very happy to announce that a two-day Django sprint will take place on February 22-23 in Amsterdam, Netherlands. This event is organized by the Dutch Django Association.</p>
+
+<p>The venue is the office of TravelBird in the center of Amsterdam. The sprint will start on Saturday, February 22rd at 10:00 CET and and finish on Sunday, February 23 around 22:00 CET.</p>
+
+<p>With the help of the Django Software Foundation and the Dutch Django Association we will have two core developers on site: Baptiste Mispelon and Daniele Procida. Daniele will also be doing his famed “Don’t be afraid to commit” workshop, which will take people new to contributing to Django through the entire contribution process with real tickets. So please don’t hesitate to join even if you’ve never contributed to Django before.</p>
+
+<p>The first beta for Django 1.7 should come out shortly after the sprint, so we can still contribute bugfixes to it.</p>
+
+<p>If you’re unable to come to Amsterdam, you're welcome to contribute to the sprint online. Sprinters and core developers will be available in the #django-sprint IRC channel on FreeNode.</p>
+
+<p>We hope you can join us and help make the sprint as successful as possible!</p>
+
+<hr><h4>
+<a name="djangocon-europe-2014-tickets-are-now-on-sale" class="anchor" href="#djangocon-europe-2014-tickets-are-now-on-sale"><span class="octicon octicon-link"></span></a>DjangoCon Europe 2014: tickets are now on sale</h4>
+
+<p>Tickets for DjangoCon Europe 2014, which will be held on the Île des Embiez, are now on sale!</p>
+
+<p>There's an initial run of 50 early tickets, after which prices will go up.</p>
+
+<p>What's different this year is that all tickets include your accommodation and your meals.</p>
+
+<p>It can be a hassle to book suitable accommodation in a place you don't know well, never mind try to work out a budget in advance for your meals and other expenses.</p>
+
+<p>Now consider that this year's DjangoCon Europe will take place on the French Riviera - a gorgeous place to stay, but not exactly noted for being an inexpensive place to visit.</p>
+
+<p>This year, you don't need to worry about finding suitable and affordable accommodation, or where to eat or how much it will cost, because we have taken care of it for you.</p>
+
+<p>As well as saving you the time and trouble of doing it yourself, this will make it much less expensive than it would otherwise have been, because we've been able to negotiate all these prices on your behalf.</p>
+
+<p>So, the basic cost for the event, including two nights' accommodation, two breakfasts, three lunches and two evening meals is a mere €610 at the early bird rate (and only €670 thereafter).</p>
+
+<p>Users Group As anyone who is familiar with the French Riviera can tell you, that's very good value, and it includes the entire conference too!</p>
+
+<p>On top of the basic ticket there are various options:</p>
+
+<p>Early arrival
+If you prefer to arrive on Monday afternoon or evening rather than Tuesday morning, you can purchase an extra night (dinner and breakfast included of course).</p>
+
+<p>Sprints
+Sprinters should purchase a ticket for the extra two nights and four meals.</p>
+
+<p>Partners and family
+Finally, it's not often that one gets to visit a place as special as the Île des Embiez, so make the most of it. You're invited to bring your partner and family!</p>
+
+<p>The island has beaches, nature reserves, sporting facilities, some splendid wildlife - and there are no cars on the island, so it's a lovely environment.</p>
+
+<p>Your partner can join you by purchasing the appropriate Companion ticket. There's no charge for children under four. We're working out prices for older children.</p>
+
+<p>We often talk of the Python/Django family or community, but we're really serious about embracing a wider community - let's make this DjangoCon a truly inclusive family affair!</p>
+
+<p>Djangonaut couples
+If both you and your partner wish to attend the conference, you should register as an Attendee and Companion, rather than purchasing two full tickets. Note that this is aimed at couples, and that only double beds are provided.</p>
+
+<p>Posted by Daniele Procida on December 31, 2013</p>
+
+<h4>
+<a name="django-weekend-cardiff" class="anchor" href="#django-weekend-cardiff"><span class="octicon octicon-link"></span></a>Django Weekend Cardiff</h4>
+
+<p>Django Weekend Cardiff <a href="https://djangoweekend.org/">https://djangoweekend.org/</a> is completely sold out.</p>
+
+<p>Our open day remains open however, and you're invited to attend the numerous talks, tutorials and demonstrations in the programme.</p>
+
+<p><a href="https://djangoweekend.org/tutorials-demonstrations/">https://djangoweekend.org/tutorials-demonstrations/</a></p>
+
+<p>There are fifteen different sessions in the open day programme, on all kinds of subjects. We may even be able to squeeze in a few more over the coming days.</p>
+
+<p>All the sessions are free, and refreshments will be provided.</p>
+
+<p>Registration is required so we know how many people to expect, and places in tutorials will be limited.</p>
+
+<p>The sooner you register the better it is for us, because we have to plan catering, access and other practicalities - so please do it as soon as you can!</p>
+
+<p>Register: <a href="https://djangoweekend-open-day.eventbrite.co.uk">https://djangoweekend-open-day.eventbrite.co.uk</a></p>
+
+<p>One of the purposes of the open day is to showcase Django and Python to the local community - developers, researchers, government and business, school pupils and teachers.</p>
+
+<p>We are extremely grateful to the sponsors and supporters of Django Weekend <a href="https://djangoweekend.org/sponsors/">https://djangoweekend.org/sponsors/</a>, because they have made this open day possible, and to the numerous speakers and instructors who are presenting these sessions.</p>
+
+<h4>
+<a name="meetups-conferencesevents" class="anchor" href="#meetups-conferencesevents"><span class="octicon octicon-link"></span></a>Meetups, Conferences/Events</h4>
+
+<p>Jan 29 Wed  6pm  - <em>London</em> @ Conversocial, Epworth House, London<br>
+Jan 29 Wed  7pm  - <em>Washington DC</em> @ Sunlight Foundation, Washington (48 rsvps)<br>
+Jan 30 Thu  5pm  - <em>Seattle</em> @ Espresso Vivace Alley 24, Seattle (weekly on Thursday!)<br>
+Feb 03 Mon  7pm  - <em>Houston</em> @ Stag's Head Pub, Houston<br>
+Feb 04 Tue  7pm  - <em>Dallas</em> @ rewardStyle, Dallas<br>
+Feb 06 Thu  4:45pm  - <em>Israel</em> @ Desti Offices, Tel Aviv (65 rsvps so far!)<br>
+Feb 06 Thu  6pm    - <em>Melbourne</em> @ Common Code, Abbotsford<br>
+Feb 06 Thu  6pm  - <em>Bogotá</em> @ Atom House, Bogotá (37)<br>
+Feb 08 Sat  11am   - <em>Pheonix</em> @ Local Motors, Chandler<br>
+Feb 12 Wed  5:30pm  - <em>Silicon Valley</em> @ Webnertia, San Jose<br>
+Feb 18 Tue  7:15pm  - <em>Los Angeles</em> @ Metacloud, Inc., Pasadena<br>
+Feb 18 Tue  7pm  - <em>Berlin</em> @ ... (needs location, has Jannis Leidel)<br>
+Feb 19 Wed  7pm  - <em>Saint Paul Minneapolis</em> @  Common Roots Cafe, Minneapolis<br>
+Feb 20 Thu  7pm  - <em>Shanghai</em> @ Lighthouse. Jingan District, Shanghai  (first ever! 6 attendees so far!)<br>
+Feb 20 Thu  6pm  - <em>Bath and Bristol</em> @ Potato, Bristol (check date with Bath and Bristol Users Group)<br>
+Feb 22 Sat  10am  - <em>Amsterdam</em> Sprints @ TravelBird Amstredam (31)</p>
+
+<ul>
+<li>2014 Apr 9-17 -- PyCon 2014, Montreal Canada (early bird sold out)
+
+<ul>
+<li>2014 Apr 9-10 -- Tutorials</li>
+<li>2014 Apr 11-13 -- Conference</li>
+<li>2014 Apr 14-17 -- Sprints</li>
+</ul>
+</li>
+<li>2014 May 13-17 -- DjangoConEU, L'île des Embiez is located on the Côte d'Azur, between Toulon and Marseille. (no tickets announced yet, should be this week)</li>
+<li>2014 Jul 21-27 -- Euro Python 2014 in Berlin Germany. (no tickets announced yet)</li>
+<li>2014 Aug 1-5 -- PyCon AU</li>
+<li>2014 Labor-Day weekend September -- DjangoCon 2014, Portland Oregon</li>
+</ul><p><a href="http://www.pyvideo.org/">http://www.pyvideo.org/</a></p>
+
+<h2>
+<a name="5-things-you-can-dorequestscall-outs" class="anchor" href="#5-things-you-can-dorequestscall-outs"><span class="octicon octicon-link"></span></a>5. Things <em>YOU</em> can do/Requests/Call outs</h2>
+
+<h4>
+<a name="bring-out-your-interesting-schemamigrations" class="anchor" href="#bring-out-your-interesting-schemamigrations"><span class="octicon octicon-link"></span></a>Bring out your "interesting" Schemamigrations</h4>
+
+<p>Now is the time to try out 1.7, as Andrew said in the interview he's looking specifically for exotic use cases that can be debugged and any feedback about improving the UI.</p>
+
+<h4>
+<a name="give-class-based-custom-lookups-a-try-write-about-your-experiences" class="anchor" href="#give-class-based-custom-lookups-a-try-write-about-your-experiences"><span class="octicon octicon-link"></span></a>Give Class based custom Lookups a try, write about your experiences</h4>
+
+<p>Class based lookups (12-Jan thread) -- Anssi, new #16187 pull#2019 -- documentation needs work, install 1.7a take them out for a spin, add to our docs!</p>
+
+<pre><code>from django.db.models import Lookup, Extract
+_[define your custom lookup]_
+
+_[register]_
+</code></pre>
+
+<h4>
+<a name="give-back-using-your-creative-ability-make-your-django-merchandise-dreams-a-reality-for-the-dsf" class="anchor" href="#give-back-using-your-creative-ability-make-your-django-merchandise-dreams-a-reality-for-the-dsf"><span class="octicon octicon-link"></span></a>Give back using your creative ability: make your django merchandise dreams a reality for the DSF</h4>
+
+<p>If you have any visual arts skills and you've ever had any ideas about Django t-shirts, or actually any bit of merchandise with a Django logo on it: now is your chance!</p>
+
+<p>The DSF is Looking for artwork to emblazon on things to sell as fundraising for the DSF, just email <a href="foundation@djangoproject.com">foundation@djangoproject.com</a></p>
+
+<p>If you have any community requests for volunteers, support, sponsorship or other projects, please email <a href="scoop@djangoproject.com">scoop@djangoproject.com</a> to be posted here.</p>
+
+<h3>
+<a name="django-updates" class="anchor" href="#django-updates"><span class="octicon octicon-link"></span></a>Django Updates</h3>
+
+<p>New series of posts from PyDanny about using <code>pytest</code>.</p>
+
+<p>Did you know?
+As of 1.6, Django supports persistend DB connections. They're disabled by default, and can be enabled per-DB in your DATABASES setting.</p>
+
+<p>Turning this on can save you some time at the beginning of every request. The time varies, depending on which DBMS, if you're using SSL, and the latency between your DB server and app servers, but I've seen measurements between 25ms and 450ms.</p>
+
+<p>For more details see the docs.</p>
+
+<p>Did you know?
+You can use F expressions in your model fields, not just in filter() statements.</p>
+
+<p>So, if you want to increment an integer field on your model, but want to avoid the obvious race condition, you can use:</p>
+
+<blockquote>
+<blockquote>
+<blockquote>
+<p>from django.db.models import F
+product = Product.objects.get(name='Venezuelan Beaver Cheese')
+product.number_sold = F('number_sold') + 1
+product.save()
+For more detail, see Updating attributes based on existing fields.</p>
+</blockquote>
+</blockquote>
+</blockquote>
+
+<h3>
+<a name="show-notes" class="anchor" href="#show-notes"><span class="octicon octicon-link"></span></a>Show Notes</h3>
+
+<p>These show notes are "open source" on github so please be sure to make any corrections or additions at: <a href="https://github.com/elena/django-news-podcast/blob/master/9998_2014-01-26.md">github.com/elena/django-news-podcast</a></p>
+
+<p>[brief howto help]</p>
+
+<h2>
+<a name="lastly-summary-of-django-dev-this-month" class="anchor" href="#lastly-summary-of-django-dev-this-month"><span class="octicon octicon-link"></span></a>Lastly: Summary of Django Dev this month</h2>
+
+<p>Brief and loose summary of what was discussed on the Django Development mailing list during the last 28 days (excluding announcements and support enquiries).</p>
+
+<p>The purpose of this section is to provide a summary of what's been discussed in case something you're particularly interested in.</p>
+
+<p>This is very much a summary, lacking in context, quite incomplete and potentially entirely erroneous so please read and contribute to the actual threads if there's anything mentioned that's of interest to you.</p>
+
+<p>This last few weeks was dominated by talk about the new release features.</p>
+
+<p>Particularly the 5 big features going in to 1.7:</p>
+
+<ul>
+<li>Schema-migrations</li>
+<li>App refactor</li>
+<li>Custom lookup</li>
+<li>Advanced pre-fetching</li>
+<li>Validations</li>
+</ul><p># (1) Re: python-social-auth partial pipeline can not resume |Jan 11 By Karen Tracey 1 post 25 views<br>
+# (2) New to Django - Question: All registered users to post content... |Jan 6 By Retnuh 2 posts 49 views<br>
+# (3) Consider reopening ticket #11385 |Jan 8 By Andres Osinski 3 posts 70 views<br>
+# (3) django_bash_completion in Pypi Package |Jan 7 By Brett Nekolny 3 posts 74 views<br>
+# (1) Re: Django doesn't give any feedback if it cannot connect to a DB |Jan 11 By Ramiro Morales 1 post 35 views<br>
+# (2) Patch fix for #21430 : Exception to be raised when unpickiling QuerySet across unsupported django version |Jan 18 By Prasoon Shukla 2 posts 44 views<br>
+# (2) permit global change of BaseForm.label_suffix |Jan 15 By Tilman Koschnick 2 posts 49 views<br>
+# (3) Consider allowing customization of ModelForm's init parameters in contrib.admin |Jan 16 By tyrion-mx 3 posts 43 views<br>
+# (3) Re: Digest for <a href="mailto:django-d...@googlegroups.com">django-d...@googlegroups.com</a> - 1 Message in 1 Topic |Jan 3 By shmengie 3 posts 50 views<br>
+# (3) Should exceptions in dev server appear as tracebacks in the console by default? |Jan 16 By Harry Percival 3 posts 93 views<br>
+# (3) python querry on firebug extention . |Jan 13 By JAI PRAKASH SINGH 3 posts 41 views<br>
+# (2) Self-referenced template recursion handling |12/30/13 By unai 26 posts 251 views<br>
+# (1) Fixing #10811 Prevet assigning of unsaved model to Foreign Key |Jan 25 By anubhav joshi 1 post 20 views<br>
+# (1) Saving deleted code from Django source code |Jan 6 By Vajrasky Kok 3 posts 117 views<br>
+# (5) Website integrated mobile app for disaster |Jan 12 By <a href="mailto:unk...@googlegroups.com">unk...@googlegroups.com</a> 5 posts 87 views<br>
+(1) Django sprint in Amsterdam, The Netherlands, Feb 22/23 |Jan 23 By Erik Romijn 1 post 24 views<br>
+(2) Merging GSoC 2013 - Validation Refactor |Jan 20 By Russell Keith-Magee 2 posts 78 views<br>
+(2) [ANNOUNCE] Django 1.7 alpha 1 released |Jan 23 By James Bennett 2 posts 53 views<br>
+(3) django.core.checks.register shouldn't be (primarily) a decorator |Jan 23 By Shai Berger 3 posts 44 views<br>
+(5) Is it a mistake on docs for django 1.5? |Jan 21 By Leonardo Borges Avelino 5 posts 51 views<br></p>
+
+<h2>
+<a name="big-features" class="anchor" href="#big-features"><span class="octicon octicon-link"></span></a>Big Features</h2>
+
+<h3>
+<a name="app-reloading" class="anchor" href="#app-reloading"><span class="octicon octicon-link"></span></a>App Reloading</h3>
+
+<h4>
+<a name="31-app-loading-reloaded-jan-14-by-aymeric-augustin-47-posts-804-views" class="anchor" href="#31-app-loading-reloaded-jan-14-by-aymeric-augustin-47-posts-804-views"><span class="octicon octicon-link"></span></a>(31) App-loading reloaded |Jan 14 By Aymeric Augustin 47 posts 804 views</h4>
+
+<p>Aymeric Augustin has very publicly worked on the App Loading refactor, giving a detailed plan at the start, regular updates, and a slew of code improvements.</p>
+
+<p>This work has focused on changing how we think about INSTALLED_APPS. The most noticeable changes are:</p>
+
+<p>Allow apps without a models module or package
+Provide a verbose name, for example for the admin
+My personal favourite goal "Provide a reliable initialization signal" was, unfortunately, not achieved in the time frame, but looks to be within sight. All of the resulting tasks are now in tickets with the keyword "app-loading", ready for the wider community to tackle.</p>
+
+<h4>
+<a name="8-thoughts-on-defining-and-autoimporting-signalspy-jan-16-by-daniel-sokolowski-8-posts-396-views" class="anchor" href="#8-thoughts-on-defining-and-autoimporting-signalspy-jan-16-by-daniel-sokolowski-8-posts-396-views"><span class="octicon octicon-link"></span></a>(8) Thoughts on defining and autoimporting signals.py |Jan 16 By Daniel Sokolowski 8 posts 396 views</h4>
+
+<p>Daniel Sokolowski 22-Dec-11
+Asking about where to define signals for an app. Back then the word from RKM was:</p>
+
+<blockquote>
+<p>The root problem is that there isn't a single reliable place to put "app startup" logic. With the current way Django handles apps, there isn't a single solution that will work everywhere, which one of the reasons that the docs are silent on the issue.</p>
+</blockquote>
+
+<p>Coincidentally this thread was re-dug up on 15-Jan, and Aymeric could promptly state that "It's fixed in 1.7" and point to both 'signals' in the docs and to the app refactor commits and discussions.</p>
+
+<p><a href="https://github.com/django/django/commits/master/docs/ref/signals.txt">https://github.com/django/django/commits/master/docs/ref/signals.txt</a></p>
+
+<p>So for the record folks:</p>
+
+<p>As at 1.7 there is an official, "Django way" for where to put signals, where to put handlers, where to wire them up, and how to test all that stuff.</p>
+
+<p>There's a commit from Aymeric called: "Updated advice on connecting signals at startup."</p>
+
+<h4>
+<a name="16-renaming-appshas_app-jan-7-by-aymeric-augustin-16-posts-90-views" class="anchor" href="#16-renaming-appshas_app-jan-7-by-aymeric-augustin-16-posts-90-views"><span class="octicon octicon-link"></span></a>(16) Renaming apps.has_app |Jan 7 By Aymeric Augustin 16 posts 90 views</h4>
+
+<p>The hardest of problems: naming things.</p>
+
+<blockquote>
+<p>During the app_loading refactor, I introduced a method to test if a given application is enabled, and I named it <code>has_app</code>.</p>
+</blockquote>
+
+<p>Its main uses are detecting misconfigurations and skipping tests.</p>
+
+<p>Tried: .installed .has_app .has_installed .have_installed</p>
+
+<p><em>is\</em>installed_</p>
+
+<h4>
+<a name="6-forbidding-double-imports-jan-7-by-aymeric-augustin-6-posts-101-views" class="anchor" href="#6-forbidding-double-imports-jan-7-by-aymeric-augustin-6-posts-101-views"><span class="octicon octicon-link"></span></a>(6) Forbidding double imports |Jan 7 By Aymeric Augustin 6 posts 101 views</h4>
+
+<p>Up to Django 1.4: every Django project was vulnerable to double import problems: since PYTHONPATH contained both a directory and its parent, the same module could get imported twice through different paths.</p>
+
+<p>As of Django 1.6: there’s no built-in support for setting PYTHONPATH like that. However, some users may still be setting it manually to avoid fixing their imports.</p>
+
+<p>Django still contains some ad-hoc mechanisms to work around the consequences of this poor setup, notably
+ModelBase, the metaclass for Model: defining a class that inherits from Model can return an existing class instead of creating a new one.</p>
+
+<p>He'd be inclined to do it immediately, shouldn't be too hard, but being <em>not backwards compatible</em> will create deprecation path to 1.9.</p>
+
+<p>As the incompatible behaviour predates the LTS version 1.4 (to paraphrase Last comment on 7-Jan): Double imports will be killed with fire.</p>
+
+<h3>
+<a name="schema-migrations" class="anchor" href="#schema-migrations"><span class="octicon octicon-link"></span></a>Schema Migrations</h3>
+
+<h4>
+<a name="13-17-schema-migrations-and-auth_profile_module--get_profile-deprecation-jan-25-by-brian-neal-13-posts-71-views" class="anchor" href="#13-17-schema-migrations-and-auth_profile_module--get_profile-deprecation-jan-25-by-brian-neal-13-posts-71-views"><span class="octicon octicon-link"></span></a>(13) 1.7 Schema migrations and AUTH_PROFILE_MODULE / get_profile() deprecation |Jan 25 By Brian Neal 13 posts 71 views<br>
+</h4>
+
+<h4>
+<a name="13-must-a-django-database-support-migrations-jan-23-by-michael-manfre-13-posts-89-views" class="anchor" href="#13-must-a-django-database-support-migrations-jan-23-by-michael-manfre-13-posts-89-views"><span class="octicon octicon-link"></span></a>(13) Must a Django Database Support Migrations? |Jan 23 By Michael Manfre 13 posts 89 views<br>
+</h4>
+
+<p>Ticket: #21841 Add DatabaseFeature to disable schema migrations (new New feature)</p>
+
+<p>A discussion of this ticket on IRC raised</p>
+
+<p>the question about whether schema migration support is required for a database backend to be compliant with Django 1.7.</p>
+
+<p>The scenario that prompted this ticket is that my primary project will not use Django for migrations because it interfaces with a legacy database with other tools and a DBA that manage the database schema. The "able to support schema migrations" bit relates to NoSQL, which doesn't necessarily have a strict schema.</p>
+
+<h4>
+<a name="12-migrations-and-swappable-modelsauth_user_model-jan-12-by-andrew-godwin-12-posts-123-views" class="anchor" href="#12-migrations-and-swappable-modelsauth_user_model-jan-12-by-andrew-godwin-12-posts-123-views"><span class="octicon octicon-link"></span></a>(12) Migrations and swappable models/AUTH_USER_MODEL |Jan 12 By Andrew Godwin 12 posts 123 views</h4>
+
+<p>Long and technically deep discussion about some of the specific intricacies of applying "swappable models" migrations. A major feature of 1.7</p>
+
+<p>Swappable models are an interesting and powerful feature that was previously removed from Django.</p>
+
+<h3>
+<a name="custom-lookup" class="anchor" href="#custom-lookup"><span class="octicon octicon-link"></span></a>Custom lookup</h3>
+
+<h4>
+<a name="2-class-based-lookups-jan-12-by-anssi-k%C3%A4%C3%A4ri%C3%A4inen-2-posts-46-views" class="anchor" href="#2-class-based-lookups-jan-12-by-anssi-k%C3%A4%C3%A4ri%C3%A4inen-2-posts-46-views"><span class="octicon octicon-link"></span></a>(2) Class based lookups |Jan 12 By Anssi Kääriäinen 2 posts 46 views</h4>
+
+<p>Class based lookups -- Anssi, new #16187 pull#2019 -- documentation needs work, install 1.7a take them out for a spin, add to our docs!</p>
+
+<pre><code>from django.db.models import Lookup, Extract
+_[define your custom lookup]_
+
+_[register]_
+</code></pre>
+
+<ul>
+<li>Advanced pre-fetching</li>
+</ul><h3>
+<a name="validations" class="anchor" href="#validations"><span class="octicon octicon-link"></span></a>Validations</h3>
+
+<h4>
+<a name="24-app-loading-pragmatic-concerns-about-default-appconfig-objects-and-ready-implementations-24-jan-25-by-russell-keith-magee-24-posts-178-views" class="anchor" href="#24-app-loading-pragmatic-concerns-about-default-appconfig-objects-and-ready-implementations-24-jan-25-by-russell-keith-magee-24-posts-178-views"><span class="octicon octicon-link"></span></a>(24) App-loading: Pragmatic concerns about default AppConfig objects and ready() implementations (24) |Jan 25 By Russell Keith-Magee 24 posts 178 views</h4>
+
+<p>First off - this isn't critical for 1.7 alpha - I'm raising it now because I've been in this space for the last couple of days as a result of the working on the check framework. I suspect any changes stemming from this discussion can be landed in the beta period without major problems.</p>
+
+<p>Also - Aymeric - you've done a great job with this app loading work. I didn't get much of a chance to follow along as it was unfolding, but the resultant work has been a pleasure to work with.</p>
+
+<p>With one exception :-)</p>
+
+<p>We've now got AppConfig objects for each app (e.g., contrib.admin). Those AppConfig objects can have ready() methods that invoke startup logic. This is all great stuff that has been a long time coming.</p>
+
+<p><em>But</em></p>
+
+<p>From a backwards compatibility perspective, there seems to be a gap in the way AppConfig objects are instantiated.</p>
+
+<p>...</p>
+
+<p>(several thousand more words and 24 posts)</p>
+
+<h4>
+<a name="10-feature-request-postpre-commitrollback-signals-jan-19-by-jes%C3%BAs-espino-10-posts-137-views" class="anchor" href="#10-feature-request-postpre-commitrollback-signals-jan-19-by-jes%C3%BAs-espino-10-posts-137-views"><span class="octicon octicon-link"></span></a>(10) Feature request: post/pre commit/rollback signals |Jan 19 By Jesús Espino 10 posts 137 views</h4>
+
+<p>#21803 Support post-commit hooks (new New feature)</p>
+
+<p>This allows attach some code when a transaction is committed or rolled back.</p>
+
+<p>only when a transaction is committed successfully</p>
+
+<p>Carl Meyer
+<a href="https://github.com/carljm/django-transaction-hooks">https://github.com/carljm/django-transaction-hooks</a></p>
+
+<p>case of abuse for this sort of hook is doing something business critical in the post-commit hook. It must be clear that this is not a substitute for two phase commit or other ways of avoiding crash-just-after-commit problem.</p>
+
+<h4>
+<a name="19-improving-aggregate-support-14030-jan-20-by-josh-smeaton-24-posts-399-views" class="anchor" href="#19-improving-aggregate-support-14030-jan-20-by-josh-smeaton-24-posts-399-views"><span class="octicon octicon-link"></span></a>(19) Improving aggregate support (#14030) |Jan 20 By Josh Smeaton 24 posts 399 views</h4>
+
+<p>Josh Smeaton has taken on the challenge of #14030 - to allow using more complex expressions in aggregates.</p>
+
+<p>This one's been on the cards for 3 years now, and a number of people have looked into it. With Anssi Kääriäinen (akaariai) lending advice, perhaps we can hope to see this land soon!</p>
+
+<h4>
+<a name="17-recommending-a-python-3-compatible-mysql-connector-jan-23-by-aymeric-augustin-17-posts-1644-views" class="anchor" href="#17-recommending-a-python-3-compatible-mysql-connector-jan-23-by-aymeric-augustin-17-posts-1644-views"><span class="octicon octicon-link"></span></a>(17) Recommending a Python 3-compatible MySQL connector |Jan 23 By Aymeric Augustin 17 posts 1644 views<br>
+</h4>
+
+<p>6-Jun-2014 Aymeric Augustin</p>
+
+<p>To claim first-class Python 3 support in Django 1.6, we need to recommend a MySQL connector that works. This was discussed a few times on the mailing list, now's the time to make a decision. Here's a summary of the options.</p>
+
+<p>Trac ticket: <a href="https://code.djangoproject.com/ticket/20025">https://code.djangoproject.com/ticket/20025</a>
+Pull request: <a href="https://github.com/django/django/pull/1044">https://github.com/django/django/pull/1044</a></p>
+
+<p>GPL, oracle are involved, the water is muddied by MySQLdb is also released under the GPL.</p>
+
+<h4>
+<a name="django-security--owasp-project-jan-20-by-michael-coates-2-posts-113-views" class="anchor" href="#django-security--owasp-project-jan-20-by-michael-coates-2-posts-113-views"><span class="octicon octicon-link"></span></a>Django Security &amp; OWASP Project |Jan 20 By Michael Coates 2 posts 113 views</h4>
+
+<p>Jan 15 Michael Coates</p>
+
+<p>He says:
+Over at OWASP they've started a framework security project. His goal is to capture the security posture, options and capabilities of different frameworks.</p>
+
+<p>When I was leading the security team at Mozilla we worked with Django a ton.</p>
+
+<p>When I was leading the security team at Mozilla we worked with Django a ton. You guys have always been on the leading edge of framework security. It was an easy choice to start with Django for the OWASP framework security project.</p>
+
+<p>To which JKM (head of security at Heroku and former Django BDFL) replies:
+This sounds right up my ally. I'll jump on the list and post some more info over there.</p>
+
+<p>They're looking for help:</p>
+
+<ul>
+<li>reviews their list of security controls in frameworks (which will become a "standard list")</li>
+<li>assistance with adding missing controls</li>
+</ul><p>If you're interested join the mailing list, google: OWASP framework security project</p>
+
+<h4>
+<a name="3-schema-editor-changes-feedback-request-jan-6-by-michael-manfre-3-posts-59-views" class="anchor" href="#3-schema-editor-changes-feedback-request-jan-6-by-michael-manfre-3-posts-59-views"><span class="octicon octicon-link"></span></a>(3) Schema editor changes feedback request |Jan 6 By Michael Manfre 3 posts 59 views</h4>
+
+<p>MSSQL</p>
+
+<h4>
+<a name="21340-using-setuptools-to-make-django-adminpy-runnable-on-windows" class="anchor" href="#21340-using-setuptools-to-make-django-adminpy-runnable-on-windows"><span class="octicon octicon-link"></span></a>(#21340) Using setuptools to make django-admin.py runnable on Windows</h4>
+
+<p>12/30/13 By Remram 15 posts 215 views</p>
+
+<p>Using setuptools
+The idea of using setuptools to make django-admin.py runnable on Windows (#21340) has been brought up again.</p>
+
+<p>After discussion on IRC, the following was decided (as posted by Florian Apolloner):</p>
+
+<p>We are not going to support setuptools and distutils, this makes the setupprocess difficult to debug and test imo.
+Given Donald's "okay" we might switch to setuptools completely
+There seems to be a bug in pip when installing a wheel, which renders the django-admin.exe unusable on windows, help welcome
+PR for this issue is now at <a href="https://github.com/django/django/pull/2116">https://github.com/django/django/pull/2116</a></p>
+
+<h4>
+<a name="testing-parameters-in-database-settings" class="anchor" href="#testing-parameters-in-database-settings"><span class="octicon octicon-link"></span></a>Testing parameters in database settings</h4>
+
+<p>Jan 20 By Shai Berger 7 posts 65 views</p>
+
+<p>Ticket: #21775 No facility to specify the datafile of a django test Oracle tablespace (assigned New feature)</p>
+
+<p>State: ongoing discussion about what an appropriate way of organising a solution to this might be in settings.</p>
+
+<h4>
+<a name="8-ticket-21751-review-requested-jan-22-by-michael-manfre-8-posts-98-views" class="anchor" href="#8-ticket-21751-review-requested-jan-22-by-michael-manfre-8-posts-98-views"><span class="octicon octicon-link"></span></a>(8) Ticket #21751 review requested |Jan 22 By Michael Manfre 8 posts 98 views</h4>
+
+<p>#21751 new Cleanup/optimization
+Django doesn't do a good job of closing cursors</p>
+
+<h4>
+<a name="17-enforce-the-use-of-a-unicode-string-in-settingslanguages-jan-23-by-henrique-romano-17-posts-78-views" class="anchor" href="#17-enforce-the-use-of-a-unicode-string-in-settingslanguages-jan-23-by-henrique-romano-17-posts-78-views"><span class="octicon octicon-link"></span></a>(17) Enforce the use of a unicode string in settings.LANGUAGES |Jan 23 By Henrique Romano 17 posts 78 views</h4>
+
+<p>A long disucssions about a Python 2.X problem where unicode is not handled correctly in-so-far as it effects settings, particularly settings.LANGUAGES (somewhere where this is most likely to have an impact of course and unicode often is used in some non-English languages).</p>
+
+<h4>
+<a name="3-cas-in-cache-framework-jan-18-by-alexey-moskvin-3-posts-51-views" class="anchor" href="#3-cas-in-cache-framework-jan-18-by-alexey-moskvin-3-posts-51-views"><span class="octicon octicon-link"></span></a>(3) CAS in cache framework |Jan 18 By Alexey Moskvin 3 posts 51 views</h4>
+
+<p>Compare-And-Set in Memcache
+django cache api doesn't support. Patches welcome.</p>
+
+<h4>
+<a name="4-quick-question-re-typo-fixing-etiquette-jan-25-by-james-turley-4-posts-43-views" class="anchor" href="#4-quick-question-re-typo-fixing-etiquette-jan-25-by-james-turley-4-posts-43-views"><span class="octicon octicon-link"></span></a>(4) Quick question re typo-fixing etiquette |Jan 25 By James Turley 4 posts 43 views</h4>
+
+<p>Last and slightly least:</p>
+
+<h4>
+<a name="1-proposal-of-another-podcast-122913-by-me-1-post-210-views" class="anchor" href="#1-proposal-of-another-podcast-122913-by-me-1-post-210-views"><span class="octicon octicon-link"></span></a>(1) Proposal of (another) podcast |12/29/13 By me 1 post 210 views</h4>
+
+<hr><p>Credits:</p>
+
+<p>If you liked the music samples in this podcast, and rightly you should, well these are all performed by our erstwhile BDFL Adrian Holovaty who jase generously given me permission to reproduce them here. The theme tune was both composed <em>and</em> performed by him and the others are from his youtube channel -- you can buy his album on bandcamp.</p>
+
+<p>Thanks also for the time of Andrew Godwin and Daniele Procida, and the time and support of Russell Keith-Magee and <a href="http://mattaustin.me.uk">Matt Austin</a>. Thanks to Dave Pretty and Greg Jolley without whom this podcast wouldn't have happened.</p>
+
+<p>Talk to you again next time! I'm Elena Williams and this was the Django News Podcast for 26-Dec-2014</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Django News Podcast maintained by <a href="https://github.com/elena">elena</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-45876614-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
