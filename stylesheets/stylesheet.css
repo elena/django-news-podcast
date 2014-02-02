@@ -117,9 +117,9 @@ footer p {
   color: #f2f2f2;
 }
 
-a {
+a, a:visited {
   text-decoration: none;
-  color: #f2f2f2;
+  color: #ab5603;
   text-shadow: none;
 
   transition: color 0.5s ease;
@@ -134,9 +134,7 @@ a {
   -ms-transition: text-shadow 0.5s ease;
 }
 
-a:hover, a:focus {text-decoration: underline;}
-
-a:visited {color: #ab5603;}
+a:hover, a:visited:hover, a:focus {color:#234f32; background-color:#E0FFB8;}
 
 footer a {
   color: #F2F2F2;
@@ -270,6 +268,21 @@ td {
 form {
   background: #f2f2f2;
   padding: 20px;
+}
+
+/*******************************************************************************
+Custom Styles
+*******************************************************************************/
+
+#comment-jump {
+  position: fixed;
+  right: 0;
+  top: 330px;
+  border: 1px solid #ddd;
+  background: #f6f6f6;
+  width: 105px;
+  text-align: right;
+  padding: 5px 15px 5px 0;
 }
 
 /*******************************************************************************
