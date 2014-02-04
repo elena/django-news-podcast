@@ -1,3 +1,18 @@
+
+## Latest Episode
+
+**Download** and show notes: [http://elena.github.io/django-news-podcast/140126/](http://elena.github.io/django-news-podcast/140126/)
+
+**Listen online** at soundcloud: [https://soundcloud.com/elena/django-news-podcast-26-jan](https://soundcloud.com/elena/django-news-podcast-26-jan)
+
+---
+
+## Github Pages
+
+[http://elena.github.io/django-news-podcast/](http://elena.github.io/django-news-podcast/)
+
+---
+
 December 2013
 
 This project has been on the mind of the author for several years and is motivated at this time because of the following:
