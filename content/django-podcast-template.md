@@ -40,6 +40,12 @@ To modify this file please update the *.md file in the `/content/` directory for
 | [ ] Tweet
 | [>] Delete this list from this file and publish notes
 
+Recording Meta data:
+Artist Name: Django News Podcast with _[Elena Williams]_
+Track Title: D-Mmm-YYYY Django News Podcast
+Album Title: Django News Podcast YYYY
+Year: YYYY
+Genre: podcast, technology, programming, python, django
 ```
 
 ---
