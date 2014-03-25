@@ -1,9 +1,8 @@
 
 ## Latest Episode
 
-**Download** and show notes: [http://elena.github.io/django-news-podcast/140126/](http://elena.github.io/django-news-podcast/140126/)
 
-**Listen online** at soundcloud: [https://soundcloud.com/elena/django-news-podcast-26-jan](https://soundcloud.com/elena/django-news-podcast-26-jan)
+**Listen online** at soundcloud: [https://soundcloud.com/elena](https://soundcloud.com/elena)
 
 ---
 
